@@ -28,6 +28,11 @@ my_item_idex11 = False
 my_item_idex12 = False
 my_item_idex13 = False
 my_item_idex14 = False
+my_item_idex15 = False
+my_item_idex16 = False
+my_item_idex17 = False
+my_item_idex18 = False
+my_item_idex19 = False
 
 while True:
     try:
@@ -101,6 +106,11 @@ class Sorting:
         global my_item_idex12
         global my_item_idex13
         global my_item_idex14
+        global my_item_idex15
+        global my_item_idex16
+        global my_item_idex17
+        global my_item_idex18
+        global my_item_idex19
 
         def quicksort(list):
             if len(list) < 2:
@@ -115,193 +125,238 @@ class Sorting:
 
                 return quicksort(low) + [pivot] + quicksort(high)
 
+        if self.lenValues >= 1:
+            point1_x = 25
+            point1_y = round(450 - (quicksort(self.values)[0] * 4.5))
+            point1_y2 = (round(450 - (quicksort(self.values)[0] * 4.5))) + 2
+            if self.lenValues >= 2:
+                point2_x = ((875 - (self.lenValues * 2)) / self.lenValues) + 28
+                point2_y = round(450 - (quicksort(self.values)[1] * 4.5))
+                point2_y2 = (round(450 - (quicksort(self.values)[1] * 4.5))) + 2
+                if self.lenValues >= 3:
+                    point3_x = (((875 - (self.lenValues * 2)) / self.lenValues) * 2) + 30
+                    point3_y = round(450 - (quicksort(self.values)[2] * 4.5))
+                    point3_y2 = (round(450 - (quicksort(self.values)[2] * 4.5))) + 2
+                    if self.lenValues >= 4:
+                        point4_x = (((875 - (self.lenValues * 2)) / self.lenValues) * 3) +  32
+                        point4_y = round(450 - (quicksort(self.values)[3] * 4.5))
+                        point4_y2 = (round(450 - (quicksort(self.values)[3] * 4.5)) + 2)
+                        if self.lenValues >= 5:
+                            point5_x = (((875 - (self.lenValues * 2)) / self.lenValues) * 4) +  34
+                            point5_y = round(450 - (quicksort(self.values)[4] * 4.5))
+                            point5_y2 = (round(450 - (quicksort(self.values)[4] * 4.5))) + 2
+                            if self.lenValues >= 6:
+                                point6_x = (((875 - (self.lenValues * 2)) / self.lenValues) * 5) +  36
+                                point6_y = round(450 - (quicksort(self.values)[5] * 4.5))
+                                point6_y2 = (round(450 - (quicksort(self.values)[5] * 4.5))) + 2
+                                if self.lenValues >= 7:
+                                    point7_x = (((875 - (self.lenValues * 2)) / self.lenValues) * 6) +  38
+                                    point7_y = round(450 - (quicksort(self.values)[6] * 4.5))
+                                    point7_y2 = (round(450 - (quicksort(self.values)[6] * 4.5))) + 2
+                                    if self.lenValues >= 8:
+                                        point8_x = (((875 - (self.lenValues * 2)) / self.lenValues) * 7) +  40
+                                        point8_y  = round(450 - (quicksort(self.values)[7] * 4.5))
+                                        point8_y2 = (round(450 - (quicksort(self.values)[7] * 4.5))) + 2
+                                        if self.lenValues >= 9:
+                                            point9_x = (((875 - (self.lenValues * 2)) / self.lenValues) * 8) +  42
+                                            point9_y = round(450 - (quicksort(self.values)[8] * 4.5))
+                                            point9_y2 = (round(450 - (quicksort(self.values)[8] * 4.5))) + 2
+                                            if self.lenValues >= 10:
+                                                point10_x = (((875 - (self.lenValues * 2)) / self.lenValues) * 9) + 44
+                                                point10_y = round(450 - (quicksort(self.values)[9] * 4.5))
+                                                point10_y2 = (round(450 - (quicksort(self.values)[9] * 4.5))) + 2
+                                                if self.lenValues >= 11:
+                                                    point11_x = (((875 - (self.lenValues * 2)) / self.lenValues) * 10) +  46
+                                                    point11_y = round(450 - (quicksort(self.values)[10] * 4.5))
+                                                    point11_y2 = (round(450 - (quicksort(self.values)[10] * 4.5))) + 2
+                                                    if self.lenValues >= 12:
+                                                        point12_x = (((875 - (self.lenValues * 2)) / self.lenValues) * 11) +  48
+                                                        point12_y =  round(450 - (quicksort(self.values)[11] * 4.5))
+                                                        point12_y2 = (round(450 - (quicksort(self.values)[11] * 4.5))) + 2
+                                                        if self.lenValues >= 13:
+                                                            point13_x = (((875 - (self.lenValues * 2)) / self.lenValues) * 12) +  50
+                                                            point13_y = round(450 - (quicksort(self.values)[12] * 4.5))
+                                                            point13_y2 = (round(450 - (quicksort(self.values)[12] * 4.5))) + 2
+                                                            if self.lenValues >= 14:
+                                                                point14_x = (((875 - (self.lenValues * 2)) / self.lenValues) * 13) +  52
+                                                                point14_y = round(450 - (quicksort(self.values)[13] * 4.5))
+                                                                point14_y2 = (round(450 - (quicksort(self.values)[13] * 4.5))) + 2
+                                                                if self.lenValues >= 15:
+                                                                    point15_x = (((875 - (self.lenValues * 2)) / self.lenValues) * 14) +  54
+                                                                    point15_y = round(450 - (quicksort(self.values)[14] * 4.5))
+                                                                    point15_y2 = (round(450 - (quicksort(self.values)[14] * 4.5))) + 2
+                                                                    if self.lenValues >= 16:
+                                                                        point16_x = (((875 - (self.lenValues * 2)) / self.lenValues) * 15) +  56
+                                                                        point16_y = round(450 - (quicksort(self.values)[15] * 4.5))
+                                                                        point16_y2 = (round(450 - (quicksort(self.values)[15] * 4.5))) + 2
+                                                                        if self.lenValues >= 17:
+                                                                            point17_x = (((875 - (self.lenValues * 2)) / self.lenValues) * 16) +  58
+                                                                            point17_y = round(450 - (quicksort(self.values)[16] * 4.5))
+                                                                            point17_y2 = (round(450 - (quicksort(self.values)[16] * 4.5))) + 2
+                                                                            if self.lenValues >= 18:
+                                                                                point18_x = (((875 - (self.lenValues * 2)) / self.lenValues) * 17) + 60
+                                                                                point18_y = round(450 - (quicksort(self.values)[17] * 4.5))
+                                                                                point18_y2 = (round(450 - (quicksort(self.values)[17] * 4.5))) + 2
+                                                                                if self.lenValues >= 19:
+                                                                                    point19_x = (((875 - (self.lenValues * 2)) / self.lenValues) * 18) +  62
+                                                                                    point19_y = round(450 - (quicksort(self.values)[18] * 4.5))
+                                                                                    point19_y2 = (round(450 - (quicksort(self.values)[18] * 4.5))) + 2
+                                                                                    if self.lenValues >= 20:
+                                                                                        point20_x = (((875 - (self.lenValues * 2)) / self.lenValues) * 19) + 64
+                                                                                        point20_y = round(450 - (quicksort(self.values)[19] * 4.5))
+                                                                                        point20_y2 = (round(450 - (quicksort(self.values)[19] * 4.5))) + 2
 
-        if self.lenValues == 1:
-            # 1
+
+
+
+        def bar1():
             pygame.draw.rect(self.display, black, [25, round(450 - (quicksort(self.values)[0] * 4.5)), ((875 - (self.lenValues * 2)) / self.lenValues), round(450 - (450 - (quicksort(self.values)[0] * 4.5)))])
             number1 = self.main_font.render(str(quicksort(self.values)[0]), True, black)
             self.display.blit(number1, [(((875 - (self.lenValues * 2)) / self.lenValues) + 25) / 2, 460])
 
-
-        elif self.lenValues == 2:
-            # 1
-            pygame.draw.rect(self.display, black, [25, round(450 - (quicksort(self.values)[0] * 4.5)), ((875 - (self.lenValues * 2)) / self.lenValues), round(450 - (450 - (quicksort(self.values)[0] * 4.5)))])
-            number1 = self.main_font.render(str(quicksort(self.values)[0]), True, black)
-            self.display.blit(number1, [(((875 - (self.lenValues * 2)) / self.lenValues) + 25) / 2, 460])
-            # 2
+        def bar2():
             pygame.draw.rect(self.display, black, [((875 - (self.lenValues * 2)) / self.lenValues) + 28, round(450 - (quicksort(self.values)[1] * 4.5)), ((875 - (self.lenValues * 2)) / self.lenValues), round(450 - (450 - (quicksort(self.values)[1] * 4.5)))])
             number2 = self.main_font.render(str(quicksort(self.values)[1]), True, black)
             self.display.blit(number2, [((((875 - (self.lenValues * 2)) / self.lenValues) * 2) + 30) / 1.5, 460])
 
+        def bar3():
+            pygame.draw.rect(self.display, black, [(((875 - (self.lenValues * 2)) / self.lenValues) * 2) + 30, round(450 - (quicksort(self.values)[2] * 4.5)), ((875 - (self.lenValues * 2)) / self.lenValues), round(450 - (450 - (quicksort(self.values)[2] * 4.5)))])
+            number3 = self.main_font.render(str(quicksort(self.values)[2]), True, black)
+            self.display.blit(number3, [((((875 - (self.lenValues * 2)) / self.lenValues) * 3) + 30) / 1.25, 460])
 
-            point1_x = 25
-            point1_y = round(450 - (quicksort(self.values)[0] * 4.5))
-            point1_y2 = (round(450 - (quicksort(self.values)[0] * 4.5))) + 2
+        def bar4():
+            pygame.draw.rect(self.display, black, [(((875 - (self.lenValues * 2)) / self.lenValues) * 3) +  32, round(450 - (quicksort(self.values)[3] * 4.5)), ((875 - (self.lenValues * 2)) / self.lenValues), round(450 - (450 - (quicksort(self.values)[3] * 4.5)))])
+            number4 = self.main_font.render(str(quicksort(self.values)[3]), True, black)
+            self.display.blit(number4, [((((875 - (self.lenValues * 2)) / self.lenValues) * 4) + 30) / 1.2, 460])
 
-            point2_x = ((875 - (self.lenValues * 2)) / self.lenValues) + 28
-            point2_y = round(450 - (quicksort(self.values)[1] * 4.5))
-            point2_y2 = (round(450 - (quicksort(self.values)[1] * 4.5))) + 2
+        def bar5():
+            pygame.draw.rect(self.display, black, [(((875 - (self.lenValues * 2)) / self.lenValues) * 4) +  34, round(450 - (quicksort(self.values)[4] * 4.5)), ((875 - (self.lenValues * 2)) / self.lenValues), round(450 - (450 - (quicksort(self.values)[4] * 4.5)))])
+            number5 = self.main_font.render(str(quicksort(self.values)[4]), True, black)
+            self.display.blit(number5, [((((875 - (self.lenValues * 2)) / self.lenValues) * 5) + 34) / 1.17, 460])
+
+        def bar6():
+            pygame.draw.rect(self.display, black, [(((875 - (self.lenValues * 2)) / self.lenValues) * 5) +  36, round(450 - (quicksort(self.values)[5] * 4.5)), ((875 - (self.lenValues * 2)) / self.lenValues), round(450 - (450 - (quicksort(self.values)[5] * 4.5)))])
+            number6 = self.main_font.render(str(quicksort(self.values)[5]), True, black)
+            self.display.blit(number6, [((((875 - (self.lenValues * 2)) / self.lenValues) * 6) + 36) / 1.1, 460])
+
+        def bar7():
+            pygame.draw.rect(self.display, black, [(((875 - (self.lenValues * 2)) / self.lenValues) * 6) +  38, round(450 - (quicksort(self.values)[6] * 4.5)), ((875 - (self.lenValues * 2)) / self.lenValues), round(450 - (450 - (quicksort(self.values)[6] * 4.5)))])
+            number7 = self.main_font.render(str(quicksort(self.values)[6]), True, black)
+            self.display.blit(number7, [((((875 - (self.lenValues * 2)) / self.lenValues) * 7) + 38) / 1.1, 460])
+
+        def bar8():
+            pygame.draw.rect(self.display, black, [(((875 - (self.lenValues * 2)) / self.lenValues) * 7) +  40, round(450 - (quicksort(self.values)[7] * 4.5)), ((875 - (self.lenValues * 2)) / self.lenValues), round(450 - (450 - (quicksort(self.values)[7] * 4.5)))])
+            number8 = self.main_font.render(str(quicksort(self.values)[7]), True, black)
+            self.display.blit(number8, [((((875 - (self.lenValues * 2)) / self.lenValues) * 8) + 40) / 1.09, 460])
+
+        def bar9():
+            pygame.draw.rect(self.display, black, [(((875 - (self.lenValues * 2)) / self.lenValues) * 8) +  42, round(450 - (quicksort(self.values)[8] * 4.5)), ((875 - (self.lenValues * 2)) / self.lenValues), round(450 - (450 - (quicksort(self.values)[8] * 4.5)))])
+            number9 = self.main_font.render(str(quicksort(self.values)[8]), True, black)
+            self.display.blit(number9, [((((875 - (self.lenValues * 2)) / self.lenValues) * 9) + 42) / 1.08, 460])
+
+        def bar10():
+            pygame.draw.rect(self.display, black, [(((875 - (self.lenValues * 2)) / self.lenValues) * 9) +  44, round(450 - (quicksort(self.values)[9] * 4.5)), ((875 - (self.lenValues * 2)) / self.lenValues), round(450 - (450 - (quicksort(self.values)[9] * 4.5)))])
+            number10 = self.main_font.render(str(quicksort(self.values)[9]), True, black)
+            self.display.blit(number10, [((((875 - (self.lenValues * 2)) / self.lenValues) * 10) + 44) / 1.070, 460])
+
+        def bar11():
+            pygame.draw.rect(self.display, black, [(((875 - (self.lenValues * 2)) / self.lenValues) * 10) +  46, round(450 - (quicksort(self.values)[10] * 4.5)), ((875 - (self.lenValues * 2)) / self.lenValues), round(450 - (450 - (quicksort(self.values)[10] * 4.5)))])
+            number11 = self.main_font.render(str(quicksort(self.values)[10]), True, black)
+            self.display.blit(number11, [((((875 - (self.lenValues * 2)) / self.lenValues) * 11) + 46) / 1.070, 460])
+
+        def bar12():
+            pygame.draw.rect(self.display, black, [(((875 - (self.lenValues * 2)) / self.lenValues) * 11) +  48, round(450 - (quicksort(self.values)[11] * 4.5)), ((875 - (self.lenValues * 2)) / self.lenValues), round(450 - (450 - (quicksort(self.values)[11] * 4.5)))])
+            number12 = self.main_font.render(str(quicksort(self.values)[11]), True, black)
+            self.display.blit(number12, [((((875 - (self.lenValues * 2)) / self.lenValues) * 12) + 28) / 1.04, 460])
+
+        def bar13():
+            pygame.draw.rect(self.display, black, [(((875 - (self.lenValues * 2)) / self.lenValues) * 12) + 50, round(450 - (quicksort(self.values)[12] * 4.5)), ((875 - (self.lenValues * 2)) / self.lenValues), round(450 - (450 - (quicksort(self.values)[12] * 4.5)))])
+            number13 = self.main_font.render(str(quicksort(self.values)[12]), True, black)
+            self.display.blit(number13, [((((875 - (self.lenValues * 2)) / self.lenValues) * 13) + 50) / 1.07, 460])
+
+        def bar14():
+            pygame.draw.rect(self.display, black, [(((875 - (self.lenValues * 2)) / self.lenValues) * 13) +  52, round(450 - (quicksort(self.values)[13] * 4.5)), ((875 - (self.lenValues * 2)) / self.lenValues), round(450 - (450 - (quicksort(self.values)[13] * 4.5)))])
+            number14 = self.main_font.render(str(quicksort(self.values)[13]), True, black)
+            self.display.blit(number14, [((((875 - (self.lenValues * 2)) / self.lenValues) * 14) + 52) / 1.06, 460])
+
+        def bar15():
+            pygame.draw.rect(self.display, black, [(((875 - (self.lenValues * 2)) / self.lenValues) * 14) +  54, round(450 - (quicksort(self.values)[14] * 4.5)), ((875 - (self.lenValues * 2)) / self.lenValues), round(450 - (450 - (quicksort(self.values)[14] * 4.5)))])
+            number15 = self.main_font.render(str(quicksort(self.values)[14]), True, black)
+            self.display.blit(number15, [((((875 - (self.lenValues * 2)) / self.lenValues) * 15) + 54) / 1.050, 460])
+
+        def bar16():
+            pygame.draw.rect(self.display, black, [(((875 - (self.lenValues * 2)) / self.lenValues) * 15) + 56, round(450 - (quicksort(self.values)[15] * 4.5)), ((875 - (self.lenValues * 2)) / self.lenValues), round(450 - (450 - (quicksort(self.values)[15] * 4.5)))])
+            number16 = self.main_font.render(str(quicksort(self.values)[15]), True, black)
+            self.display.blit(number16, [((((875 - (self.lenValues * 2)) / self.lenValues) * 16) + 56) / 1.049, 460])
+
+        def bar17():
+            pygame.draw.rect(self.display, black, [(((875 - (self.lenValues * 2)) / self.lenValues) * 16) +  58, round(450 - (quicksort(self.values)[16] * 4.5)), ((875 - (self.lenValues * 2)) / self.lenValues), round(450 - (450 - (quicksort(self.values)[16] * 4.5)))])
+            number17 = self.main_font.render(str(quicksort(self.values)[16]), True, black)
+            self.display.blit(number17, [((((875 - (self.lenValues * 2)) / self.lenValues) * 17) + 58) / 1.048, 460])
+
+        def bar18():
+            pygame.draw.rect(self.display, black, [(((875 - (self.lenValues * 2)) / self.lenValues) * 17) + 60, round(450 - (quicksort(self.values)[17] * 4.5)), ((875 - (self.lenValues * 2)) / self.lenValues), round(450 - (450 - (quicksort(self.values)[17] * 4.5)))])
+            number18 = self.main_font.render(str(quicksort(self.values)[17]), True, black)
+            self.display.blit(number18, [((((875 - (self.lenValues * 2)) / self.lenValues) * 18) + 60) / 1.047, 460])
+
+        def bar19():
+            pygame.draw.rect(self.display, black, [(((875 - (self.lenValues * 2)) / self.lenValues) * 18) +  62, round(450 - (quicksort(self.values)[18] * 4.5)), ((875 - (self.lenValues * 2)) / self.lenValues), round(450 - (450 - (quicksort(self.values)[18] * 4.5)))])
+            number19 = self.main_font.render(str(quicksort(self.values)[18]), True, black)
+            self.display.blit(number19, [((((875 - (self.lenValues * 2)) / self.lenValues) * 19) + 62) / 1.046, 460])
+
+        def bar20():
+            pygame.draw.rect(self.display, black, [(((875 - (self.lenValues * 2)) / self.lenValues) * 19) + 64, round(450 - (quicksort(self.values)[19] * 4.5)), ((875 - (self.lenValues * 2)) / self.lenValues), round(450 - (450 - (quicksort(self.values)[19] * 4.5)))])
+            number20 = self.main_font.render(str(quicksort(self.values)[19]), True, black)
+            self.display.blit(number20, [((((875 - (self.lenValues * 2)) / self.lenValues) * 20) + 64) / 1.045, 460])
+
+
+
+        if self.lenValues == 1:
+            bar1()
+
+
+        elif self.lenValues == 2:
+            bar1()
+            bar2()
 
 
             pygame.draw.polygon(self.display, green, [[point1_x, point1_y], [point1_x, point1_y2], [point2_x, point2_y2], [point2_x, point2_y]])
 
         elif self.lenValues == 3:
-            # 1
-            pygame.draw.rect(self.display, black, [25, round(450 - (quicksort(self.values)[0] * 4.5)), ((875 - (self.lenValues * 2)) / self.lenValues), round(450 - (450 - (quicksort(self.values)[0] * 4.5)))])
-            number1 = self.main_font.render(str(quicksort(self.values)[0]), True, black)
-            self.display.blit(number1, [(((875 - (self.lenValues * 2)) / self.lenValues) + 25) / 2, 460])
-            # 2
-            pygame.draw.rect(self.display, black, [((875 - (self.lenValues * 2)) / self.lenValues) + 28, round(450 - (quicksort(self.values)[1] * 4.5)), ((875 - (self.lenValues * 2)) / self.lenValues), round(450 - (450 - (quicksort(self.values)[1] * 4.5)))])
-            number2 = self.main_font.render(str(quicksort(self.values)[1]), True, black)
-            self.display.blit(number2, [((((875 - (self.lenValues * 2)) / self.lenValues) * 2) + 30) / 1.5, 460])
-            # 3
-            pygame.draw.rect(self.display, black, [(((875 - (self.lenValues * 2)) / self.lenValues) * 2) + 30, round(450 - (quicksort(self.values)[2] * 4.5)), ((875 - (self.lenValues * 2)) / self.lenValues), round(450 - (450 - (quicksort(self.values)[2] * 4.5)))])
-            number3 = self.main_font.render(str(quicksort(self.values)[2]), True, black)
-            self.display.blit(number3, [((((875 - (self.lenValues * 2)) / self.lenValues) * 3) + 30) / 1.25, 460])
+            bar1()
+            bar2()
+            bar3()
 
-            point1_x = 25
-            point1_y = round(450 - (quicksort(self.values)[0] * 4.5))
-            point1_y2 = (round(450 - (quicksort(self.values)[0] * 4.5))) + 2
-
-            point2_x = ((875 - (self.lenValues * 2)) / self.lenValues) + 28
-            point2_y = round(450 - (quicksort(self.values)[1] * 4.5))
-            point2_y2 = (round(450 - (quicksort(self.values)[1] * 4.5))) + 2
-
-            point3_x = (((875 - (self.lenValues * 2)) / self.lenValues) * 2) + 30
-            point3_y = round(450 - (quicksort(self.values)[2] * 4.5))
-            point3_y2 = (round(450 - (quicksort(self.values)[2] * 4.5))) + 2
 
             pygame.draw.polygon(self.display, green, [[point1_x, point1_y], [point1_x, point1_y2], [point2_x, point2_y2], [point3_x, point3_y2], [point3_x, point3_y], [point2_x, point2_y]])
 
         elif self.lenValues == 4:
-            # 1
-            pygame.draw.rect(self.display, black, [25, round(450 - (quicksort(self.values)[0] * 4.5)), ((875 - (self.lenValues * 2)) / self.lenValues), round(450 - (450 - (quicksort(self.values)[0] * 4.5)))])
-            number1 = self.main_font.render(str(quicksort(self.values)[0]), True, black)
-            self.display.blit(number1, [(((875 - (self.lenValues * 2)) / self.lenValues) + 25) / 2, 460])
-            # 2
-            pygame.draw.rect(self.display, black, [((875 - (self.lenValues * 2)) / self.lenValues) + 28, round(450 - (quicksort(self.values)[1] * 4.5)), ((875 - (self.lenValues * 2)) / self.lenValues), round(450 - (450 - (quicksort(self.values)[1] * 4.5)))])
-            number2 = self.main_font.render(str(quicksort(self.values)[1]), True, black)
-            self.display.blit(number2, [((((875 - (self.lenValues * 2)) / self.lenValues) * 2) + 30) / 1.5, 460])
-            # 3
-            pygame.draw.rect(self.display, black, [(((875 - (self.lenValues * 2)) / self.lenValues) * 2) + 30, round(450 - (quicksort(self.values)[2] * 4.5)), ((875 - (self.lenValues * 2)) / self.lenValues), round(450 - (450 - (quicksort(self.values)[2] * 4.5)))])
-            number3 = self.main_font.render(str(quicksort(self.values)[2]), True, black)
-            self.display.blit(number3, [((((875 - (self.lenValues * 2)) / self.lenValues) * 3) + 30) / 1.25, 460])
-            # 4
-            pygame.draw.rect(self.display, black, [(((875 - (self.lenValues * 2)) / self.lenValues) * 3) +  32, round(450 - (quicksort(self.values)[3] * 4.5)), ((875 - (self.lenValues * 2)) / self.lenValues), round(450 - (450 - (quicksort(self.values)[3] * 4.5)))])
-            number4 = self.main_font.render(str(quicksort(self.values)[3]), True, black)
-            self.display.blit(number4, [((((875 - (self.lenValues * 2)) / self.lenValues) * 4) + 30) / 1.2, 460])
+            bar1()
+            bar2()
+            bar3()
+            bar4()
 
-            point1_x = 25
-            point1_y = round(450 - (quicksort(self.values)[0] * 4.5))
-            point1_y2 = (round(450 - (quicksort(self.values)[0] * 4.5))) + 2
 
-            point2_x = ((875 - (self.lenValues * 2)) / self.lenValues) + 28
-            point2_y = round(450 - (quicksort(self.values)[1] * 4.5))
-            point2_y2 = (round(450 - (quicksort(self.values)[1] * 4.5))) + 2
-
-            point3_x = (((875 - (self.lenValues * 2)) / self.lenValues) * 2) + 30
-            point3_y = round(450 - (quicksort(self.values)[2] * 4.5))
-            point3_y2 = (round(450 - (quicksort(self.values)[2] * 4.5))) + 2
-
-            point4_x = (((875 - (self.lenValues * 2)) / self.lenValues) * 3) +  32
-            point4_y = round(450 - (quicksort(self.values)[3] * 4.5))
-            point4_y2 = (round(450 - (quicksort(self.values)[3] * 4.5)) + 2)
             pygame.draw.polygon(self.display, green, [[point1_x, point1_y], [point1_x, point1_y2], [point2_x, point2_y2], [point3_x, point3_y2],[point4_x, point4_y2], [point4_x, point4_y], [point3_x, point3_y], [point2_x, point2_y]])
 
         elif self.lenValues == 5:
-            # 1
-            pygame.draw.rect(self.display, black, [25, round(450 - (quicksort(self.values)[0] * 4.5)), ((875 - (self.lenValues * 2)) / self.lenValues), round(450 - (450 - (quicksort(self.values)[0] * 4.5)))])
-            number1 = self.main_font.render(str(quicksort(self.values)[0]), True, black)
-            self.display.blit(number1, [(((875 - (self.lenValues * 2)) / self.lenValues) + 25) / 2, 460])
-            # 2
-            pygame.draw.rect(self.display, black, [((875 - (self.lenValues * 2)) / self.lenValues) + 28, round(450 - (quicksort(self.values)[1] * 4.5)), ((875 - (self.lenValues * 2)) / self.lenValues), round(450 - (450 - (quicksort(self.values)[1] * 4.5)))])
-            number2 = self.main_font.render(str(quicksort(self.values)[1]), True, black)
-            self.display.blit(number2, [((((875 - (self.lenValues * 2)) / self.lenValues) * 2) + 28) / 1.5, 460])
-            # 3
-            pygame.draw.rect(self.display, black, [(((875 - (self.lenValues * 2)) / self.lenValues) * 2) + 30, round(450 - (quicksort(self.values)[2] * 4.5)), ((875 - (self.lenValues * 2)) / self.lenValues), round(450 - (450 - (quicksort(self.values)[2] * 4.5)))])
-            number3 = self.main_font.render(str(quicksort(self.values)[2]), True, black)
-            self.display.blit(number3, [((((875 - (self.lenValues * 2)) / self.lenValues) * 3) + 30) / 1.25, 460])
-            # 4
-            pygame.draw.rect(self.display, black, [(((875 - (self.lenValues * 2)) / self.lenValues) * 3) +  32, round(450 - (quicksort(self.values)[3] * 4.5)), ((875 - (self.lenValues * 2)) / self.lenValues), round(450 - (450 - (quicksort(self.values)[3] * 4.5)))])
-            number4 = self.main_font.render(str(quicksort(self.values)[3]), True, black)
-            self.display.blit(number4, [((((875 - (self.lenValues * 2)) / self.lenValues) * 4) + 32) / 1.2, 460])
-            # 5
-            pygame.draw.rect(self.display, black, [(((875 - (self.lenValues * 2)) / self.lenValues) * 4) +  34, round(450 - (quicksort(self.values)[4] * 4.5)), ((875 - (self.lenValues * 2)) / self.lenValues), round(450 - (450 - (quicksort(self.values)[4] * 4.5)))])
-            number5 = self.main_font.render(str(quicksort(self.values)[4]), True, black)
-            self.display.blit(number5, [((((875 - (self.lenValues * 2)) / self.lenValues) * 5) + 34) / 1.17, 460])
+            bar1()
+            bar2()
+            bar3()
+            bar4()
+            bar5()
 
-            point1_x = 25
-            point1_y = round(450 - (quicksort(self.values)[0] * 4.5))
-            point1_y2 = (round(450 - (quicksort(self.values)[0] * 4.5))) + 2
-
-            point2_x = ((875 - (self.lenValues * 2)) / self.lenValues) + 28
-            point2_y = round(450 - (quicksort(self.values)[1] * 4.5))
-            point2_y2 = (round(450 - (quicksort(self.values)[1] * 4.5))) + 2
-
-            point3_x = (((875 - (self.lenValues * 2)) / self.lenValues) * 2) + 30
-            point3_y = round(450 - (quicksort(self.values)[2] * 4.5))
-            point3_y2 = (round(450 - (quicksort(self.values)[2] * 4.5))) + 2
-
-            point4_x = (((875 - (self.lenValues * 2)) / self.lenValues) * 3) +  32
-            point4_y = round(450 - (quicksort(self.values)[3] * 4.5))
-            point4_y2 = (round(450 - (quicksort(self.values)[3] * 4.5)) + 2)
-
-            point5_x = (((875 - (self.lenValues * 2)) / self.lenValues) * 4) +  34
-            point5_y = round(450 - (quicksort(self.values)[4] * 4.5))
-            point5_y2 = (round(450 - (quicksort(self.values)[4] * 4.5))) + 2
 
             pygame.draw.polygon(self.display, green, [[point1_x, point1_y], [point1_x, point1_y2], [point2_x, point2_y2], [point3_x, point3_y2],[point4_x, point4_y2],[point5_x, point5_y2], [point5_x, point5_y] , [point4_x, point4_y], [point3_x, point3_y], [point2_x, point2_y]])
 
         elif self.lenValues == 6:
-            # 1
-            pygame.draw.rect(self.display, black, [25, round(450 - (quicksort(self.values)[0] * 4.5)), ((875 - (self.lenValues * 2)) / self.lenValues), round(450 - (450 - (quicksort(self.values)[0] * 4.5)))])
-            number1 = self.main_font.render(str(quicksort(self.values)[0]), True, black)
-            self.display.blit(number1, [(((875 - (self.lenValues * 2)) / self.lenValues) + 25) / 2, 460])
-            # 2
-            pygame.draw.rect(self.display, black, [((875 - (self.lenValues * 2)) / self.lenValues) + 28, round(450 - (quicksort(self.values)[1] * 4.5)), ((875 - (self.lenValues * 2)) / self.lenValues), round(450 - (450 - (quicksort(self.values)[1] * 4.5)))])
-            number2 = self.main_font.render(str(quicksort(self.values)[1]), True, black)
-            self.display.blit(number2, [((((875 - (self.lenValues * 2)) / self.lenValues) * 2) + 28) / 1.5, 460])
-            # 3
-            pygame.draw.rect(self.display, black, [(((875 - (self.lenValues * 2)) / self.lenValues) * 2) + 30, round(450 - (quicksort(self.values)[2] * 4.5)), ((875 - (self.lenValues * 2)) / self.lenValues), round(450 - (450 - (quicksort(self.values)[2] * 4.5)))])
-            number3 = self.main_font.render(str(quicksort(self.values)[2]), True, black)
-            self.display.blit(number3, [((((875 - (self.lenValues * 2)) / self.lenValues) * 3) + 30) / 1.25, 460])
-            # 4
-            pygame.draw.rect(self.display, black, [(((875 - (self.lenValues * 2)) / self.lenValues) * 3) +  32, round(450 - (quicksort(self.values)[3] * 4.5)), ((875 - (self.lenValues * 2)) / self.lenValues), round(450 - (450 - (quicksort(self.values)[3] * 4.5)))])
-            number4 = self.main_font.render(str(quicksort(self.values)[3]), True, black)
-            self.display.blit(number4, [((((875 - (self.lenValues * 2)) / self.lenValues) * 4) + 32) / 1.2, 460])
-            # 5
-            pygame.draw.rect(self.display, black, [(((875 - (self.lenValues * 2)) / self.lenValues) * 4) +  34, round(450 - (quicksort(self.values)[4] * 4.5)), ((875 - (self.lenValues * 2)) / self.lenValues), round(450 - (450 - (quicksort(self.values)[4] * 4.5)))])
-            number5 = self.main_font.render(str(quicksort(self.values)[4]), True, black)
-            self.display.blit(number5, [((((875 - (self.lenValues * 2)) / self.lenValues) * 5) + 34) / 1.17, 460])
-            # 6
-            pygame.draw.rect(self.display, black, [(((875 - (self.lenValues * 2)) / self.lenValues) * 5) +  36, round(450 - (quicksort(self.values)[5] * 4.5)), ((875 - (self.lenValues * 2)) / self.lenValues), round(450 - (450 - (quicksort(self.values)[5] * 4.5)))])
-            number6 = self.main_font.render(str(quicksort(self.values)[5]), True, black)
-            self.display.blit(number6, [((((875 - (self.lenValues * 2)) / self.lenValues) * 6) + 36) / 1.1, 460])
+            bar1()
+            bar2()
+            bar3()
+            bar4()
+            bar5()
+            bar6()
 
-
-            point1_x = 25
-            point1_y = round(450 - (quicksort(self.values)[0] * 4.5))
-            point1_y2 = (round(450 - (quicksort(self.values)[0] * 4.5))) + 2
-
-            point2_x = ((875 - (self.lenValues * 2)) / self.lenValues) + 28
-            point2_y = round(450 - (quicksort(self.values)[1] * 4.5))
-            point2_y2 = (round(450 - (quicksort(self.values)[1] * 4.5))) + 2
-
-            point3_x = (((875 - (self.lenValues * 2)) / self.lenValues) * 2) + 30
-            point3_y = round(450 - (quicksort(self.values)[2] * 4.5))
-            point3_y2 = (round(450 - (quicksort(self.values)[2] * 4.5))) + 2
-
-            point4_x = (((875 - (self.lenValues * 2)) / self.lenValues) * 3) +  32
-            point4_y = round(450 - (quicksort(self.values)[3] * 4.5))
-            point4_y2 = (round(450 - (quicksort(self.values)[3] * 4.5)) + 2)
-
-            point5_x = (((875 - (self.lenValues * 2)) / self.lenValues) * 4) +  34
-            point5_y = round(450 - (quicksort(self.values)[4] * 4.5))
-            point5_y2 = (round(450 - (quicksort(self.values)[4] * 4.5))) + 2
-
-            point6_x = (((875 - (self.lenValues * 2)) / self.lenValues) * 5) +  36
-            point6_y = round(450 - (quicksort(self.values)[5] * 4.5))
-            point6_y2 = (round(450 - (quicksort(self.values)[5] * 4.5))) + 2
 
             pygame.draw.polygon(self.display, green, [
             [point1_x, point1_y], [point1_x, point1_y2], [point2_x, point2_y2], [point3_x, point3_y2],[point4_x, point4_y2], [point5_x, point5_y2], [point6_x, point6_y2],
@@ -309,62 +364,14 @@ class Sorting:
             ])
 
         elif self.lenValues == 7:
-            # 1
-            pygame.draw.rect(self.display, black, [25, round(450 - (quicksort(self.values)[0] * 4.5)), ((875 - (self.lenValues * 2)) / self.lenValues), round(450 - (450 - (quicksort(self.values)[0] * 4.5)))])
-            number1 = self.main_font.render(str(quicksort(self.values)[0]), True, black)
-            self.display.blit(number1, [(((875 - (self.lenValues * 2)) / self.lenValues) + 25) / 2, 460])
-            # 2
-            pygame.draw.rect(self.display, black, [((875 - (self.lenValues * 2)) / self.lenValues) + 28, round(450 - (quicksort(self.values)[1] * 4.5)), ((875 - (self.lenValues * 2)) / self.lenValues), round(450 - (450 - (quicksort(self.values)[1] * 4.5)))])
-            number2 = self.main_font.render(str(quicksort(self.values)[1]), True, black)
-            self.display.blit(number2, [((((875 - (self.lenValues * 2)) / self.lenValues) * 2) + 28) / 1.5, 460])
-            # 3
-            pygame.draw.rect(self.display, black, [(((875 - (self.lenValues * 2)) / self.lenValues) * 2) + 30, round(450 - (quicksort(self.values)[2] * 4.5)), ((875 - (self.lenValues * 2)) / self.lenValues), round(450 - (450 - (quicksort(self.values)[2] * 4.5)))])
-            number3 = self.main_font.render(str(quicksort(self.values)[2]), True, black)
-            self.display.blit(number3, [((((875 - (self.lenValues * 2)) / self.lenValues) * 3) + 30) / 1.25, 460])
-            # 4
-            pygame.draw.rect(self.display, black, [(((875 - (self.lenValues * 2)) / self.lenValues) * 3) +  32, round(450 - (quicksort(self.values)[3] * 4.5)), ((875 - (self.lenValues * 2)) / self.lenValues), round(450 - (450 - (quicksort(self.values)[3] * 4.5)))])
-            number4 = self.main_font.render(str(quicksort(self.values)[3]), True, black)
-            self.display.blit(number4, [((((875 - (self.lenValues * 2)) / self.lenValues) * 4) + 32) / 1.2, 460])
-            # 5
-            pygame.draw.rect(self.display, black, [(((875 - (self.lenValues * 2)) / self.lenValues) * 4) +  34, round(450 - (quicksort(self.values)[4] * 4.5)), ((875 - (self.lenValues * 2)) / self.lenValues), round(450 - (450 - (quicksort(self.values)[4] * 4.5)))])
-            number5 = self.main_font.render(str(quicksort(self.values)[4]), True, black)
-            self.display.blit(number5, [((((875 - (self.lenValues * 2)) / self.lenValues) * 5) + 34) / 1.17, 460])
-            # 6
-            pygame.draw.rect(self.display, black, [(((875 - (self.lenValues * 2)) / self.lenValues) * 5) +  36, round(450 - (quicksort(self.values)[5] * 4.5)), ((875 - (self.lenValues * 2)) / self.lenValues), round(450 - (450 - (quicksort(self.values)[5] * 4.5)))])
-            number6 = self.main_font.render(str(quicksort(self.values)[5]), True, black)
-            self.display.blit(number6, [((((875 - (self.lenValues * 2)) / self.lenValues) * 6) + 36) / 1.12, 460])
-            # 7
-            pygame.draw.rect(self.display, black, [(((875 - (self.lenValues * 2)) / self.lenValues) * 6) +  38, round(450 - (quicksort(self.values)[6] * 4.5)), ((875 - (self.lenValues * 2)) / self.lenValues), round(450 - (450 - (quicksort(self.values)[6] * 4.5)))])
-            number7 = self.main_font.render(str(quicksort(self.values)[6]), True, black)
-            self.display.blit(number7, [((((875 - (self.lenValues * 2)) / self.lenValues) * 7) + 38) / 1.1, 460])
+            bar1()
+            bar2()
+            bar3()
+            bar4()
+            bar5()
+            bar6()
+            bar7()
 
-            point1_x = 25
-            point1_y = round(450 - (quicksort(self.values)[0] * 4.5))
-            point1_y2 = (round(450 - (quicksort(self.values)[0] * 4.5))) + 2
-
-            point2_x = ((875 - (self.lenValues * 2)) / self.lenValues) + 28
-            point2_y = round(450 - (quicksort(self.values)[1] * 4.5))
-            point2_y2 = (round(450 - (quicksort(self.values)[1] * 4.5))) + 2
-
-            point3_x = (((875 - (self.lenValues * 2)) / self.lenValues) * 2) + 30
-            point3_y = round(450 - (quicksort(self.values)[2] * 4.5))
-            point3_y2 = (round(450 - (quicksort(self.values)[2] * 4.5))) + 2
-
-            point4_x = (((875 - (self.lenValues * 2)) / self.lenValues) * 3) +  32
-            point4_y = round(450 - (quicksort(self.values)[3] * 4.5))
-            point4_y2 = (round(450 - (quicksort(self.values)[3] * 4.5)) + 2)
-
-            point5_x = (((875 - (self.lenValues * 2)) / self.lenValues) * 4) +  34
-            point5_y = round(450 - (quicksort(self.values)[4] * 4.5))
-            point5_y2 = (round(450 - (quicksort(self.values)[4] * 4.5))) + 2
-
-            point6_x = (((875 - (self.lenValues * 2)) / self.lenValues) * 5) +  36
-            point6_y = round(450 - (quicksort(self.values)[5] * 4.5))
-            point6_y2 = (round(450 - (quicksort(self.values)[5] * 4.5))) + 2
-
-            point7_x = (((875 - (self.lenValues * 2)) / self.lenValues) * 6) +  38
-            point7_y = round(450 - (quicksort(self.values)[6] * 4.5))
-            point7_y2 = (round(450 - (quicksort(self.values)[6] * 4.5))) + 2
 
             pygame.draw.polygon(self.display, green, [
             [point1_x, point1_y], [point1_x, point1_y2], [point2_x, point2_y2], [point3_x, point3_y2],[point4_x, point4_y2], [point5_x, point5_y2], [point6_x, point6_y2], [point7_x, point7_y2],
@@ -372,70 +379,14 @@ class Sorting:
             ])
 
         elif self.lenValues == 8:
-            # 1
-            pygame.draw.rect(self.display, black, [25, round(450 - (quicksort(self.values)[0] * 4.5)), ((875 - (self.lenValues * 2)) / self.lenValues), round(450 - (450 - (quicksort(self.values)[0] * 4.5)))])
-            number1 = self.main_font.render(str(quicksort(self.values)[0]), True, black)
-            self.display.blit(number1, [(((875 - (self.lenValues * 2)) / self.lenValues) + 25) / 2, 460])
-            # 2
-            pygame.draw.rect(self.display, black, [((875 - (self.lenValues * 2)) / self.lenValues) + 28, round(450 - (quicksort(self.values)[1] * 4.5)), ((875 - (self.lenValues * 2)) / self.lenValues), round(450 - (450 - (quicksort(self.values)[1] * 4.5)))])
-            number2 = self.main_font.render(str(quicksort(self.values)[1]), True, black)
-            self.display.blit(number2, [((((875 - (self.lenValues * 2)) / self.lenValues) * 2) + 28) / 1.5, 460])
-            # 3
-            pygame.draw.rect(self.display, black, [(((875 - (self.lenValues * 2)) / self.lenValues) * 2) + 30, round(450 - (quicksort(self.values)[2] * 4.5)), ((875 - (self.lenValues * 2)) / self.lenValues), round(450 - (450 - (quicksort(self.values)[2] * 4.5)))])
-            number3 = self.main_font.render(str(quicksort(self.values)[2]), True, black)
-            self.display.blit(number3, [((((875 - (self.lenValues * 2)) / self.lenValues) * 3) + 30) / 1.25, 460])
-            # 4
-            pygame.draw.rect(self.display, black, [(((875 - (self.lenValues * 2)) / self.lenValues) * 3) +  32, round(450 - (quicksort(self.values)[3] * 4.5)), ((875 - (self.lenValues * 2)) / self.lenValues), round(450 - (450 - (quicksort(self.values)[3] * 4.5)))])
-            number4 = self.main_font.render(str(quicksort(self.values)[3]), True, black)
-            self.display.blit(number4, [((((875 - (self.lenValues * 2)) / self.lenValues) * 4) + 32) / 1.2, 460])
-            # 5
-            pygame.draw.rect(self.display, black, [(((875 - (self.lenValues * 2)) / self.lenValues) * 4) +  34, round(450 - (quicksort(self.values)[4] * 4.5)), ((875 - (self.lenValues * 2)) / self.lenValues), round(450 - (450 - (quicksort(self.values)[4] * 4.5)))])
-            number5 = self.main_font.render(str(quicksort(self.values)[4]), True, black)
-            self.display.blit(number5, [((((875 - (self.lenValues * 2)) / self.lenValues) * 5) + 34) / 1.17, 460])
-            # 6
-            pygame.draw.rect(self.display, black, [(((875 - (self.lenValues * 2)) / self.lenValues) * 5) +  36, round(450 - (quicksort(self.values)[5] * 4.5)), ((875 - (self.lenValues * 2)) / self.lenValues), round(450 - (450 - (quicksort(self.values)[5] * 4.5)))])
-            number6 = self.main_font.render(str(quicksort(self.values)[5]), True, black)
-            self.display.blit(number6, [((((875 - (self.lenValues * 2)) / self.lenValues) * 6) + 36) / 1.12, 460])
-            # 7
-            pygame.draw.rect(self.display, black, [(((875 - (self.lenValues * 2)) / self.lenValues) * 6) +  38, round(450 - (quicksort(self.values)[6] * 4.5)), ((875 - (self.lenValues * 2)) / self.lenValues), round(450 - (450 - (quicksort(self.values)[6] * 4.5)))])
-            number7 = self.main_font.render(str(quicksort(self.values)[6]), True, black)
-            self.display.blit(number7, [((((875 - (self.lenValues * 2)) / self.lenValues) * 7) + 38) / 1.1, 460])
-            # 8
-            pygame.draw.rect(self.display, black, [(((875 - (self.lenValues * 2)) / self.lenValues) * 7) +  40, round(450 - (quicksort(self.values)[7] * 4.5)), ((875 - (self.lenValues * 2)) / self.lenValues), round(450 - (450 - (quicksort(self.values)[7] * 4.5)))])
-            number8 = self.main_font.render(str(quicksort(self.values)[7]), True, black)
-            self.display.blit(number8, [((((875 - (self.lenValues * 2)) / self.lenValues) * 8) + 40) / 1.09, 460])
-
-            point1_x = 25
-            point1_y = round(450 - (quicksort(self.values)[0] * 4.5))
-            point1_y2 = (round(450 - (quicksort(self.values)[0] * 4.5))) + 2
-
-            point2_x = ((875 - (self.lenValues * 2)) / self.lenValues) + 28
-            point2_y = round(450 - (quicksort(self.values)[1] * 4.5))
-            point2_y2 = (round(450 - (quicksort(self.values)[1] * 4.5))) + 2
-
-            point3_x = (((875 - (self.lenValues * 2)) / self.lenValues) * 2) + 30
-            point3_y = round(450 - (quicksort(self.values)[2] * 4.5))
-            point3_y2 = (round(450 - (quicksort(self.values)[2] * 4.5))) + 2
-
-            point4_x = (((875 - (self.lenValues * 2)) / self.lenValues) * 3) +  32
-            point4_y = round(450 - (quicksort(self.values)[3] * 4.5))
-            point4_y2 = (round(450 - (quicksort(self.values)[3] * 4.5)) + 2)
-
-            point5_x = (((875 - (self.lenValues * 2)) / self.lenValues) * 4) +  34
-            point5_y = round(450 - (quicksort(self.values)[4] * 4.5))
-            point5_y2 = (round(450 - (quicksort(self.values)[4] * 4.5))) + 2
-
-            point6_x = (((875 - (self.lenValues * 2)) / self.lenValues) * 5) +  36
-            point6_y = round(450 - (quicksort(self.values)[5] * 4.5))
-            point6_y2 = (round(450 - (quicksort(self.values)[5] * 4.5))) + 2
-
-            point7_x = (((875 - (self.lenValues * 2)) / self.lenValues) * 6) +  38
-            point7_y = round(450 - (quicksort(self.values)[6] * 4.5))
-            point7_y2 = (round(450 - (quicksort(self.values)[6] * 4.5))) + 2
-
-            point8_x = (((875 - (self.lenValues * 2)) / self.lenValues) * 7) +  40
-            point8_y  = round(450 - (quicksort(self.values)[7] * 4.5))
-            point8_y2 = (round(450 - (quicksort(self.values)[7] * 4.5))) + 2
+            bar1()
+            bar2()
+            bar3()
+            bar4()
+            bar5()
+            bar6()
+            bar7()
+            bar8()
 
             pygame.draw.polygon(self.display, green, [
             [point1_x, point1_y], [point1_x, point1_y2], [point2_x, point2_y2], [point3_x, point3_y2],[point4_x, point4_y2], [point5_x, point5_y2], [point6_x, point6_y2], [point7_x, point7_y2], [point8_x, point8_y2],
@@ -443,78 +394,16 @@ class Sorting:
             ])
 
         elif self.lenValues == 9:
-            # 1
-            pygame.draw.rect(self.display, black, [25, round(450 - (quicksort(self.values)[0] * 4.5)), ((875 - (self.lenValues * 2)) / self.lenValues), round(450 - (450 - (quicksort(self.values)[0] * 4.5)))])
-            number1 = self.main_font.render(str(quicksort(self.values)[0]), True, black)
-            self.display.blit(number1, [(((875 - (self.lenValues * 2)) / self.lenValues) + 25) / 2, 460])
-            # 2
-            pygame.draw.rect(self.display, black, [((875 - (self.lenValues * 2)) / self.lenValues) + 28, round(450 - (quicksort(self.values)[1] * 4.5)), ((875 - (self.lenValues * 2)) / self.lenValues), round(450 - (450 - (quicksort(self.values)[1] * 4.5)))])
-            number2 = self.main_font.render(str(quicksort(self.values)[1]), True, black)
-            self.display.blit(number2, [((((875 - (self.lenValues * 2)) / self.lenValues) * 2) + 28) / 1.5, 460])
-            # 3
-            pygame.draw.rect(self.display, black, [(((875 - (self.lenValues * 2)) / self.lenValues) * 2) + 30, round(450 - (quicksort(self.values)[2] * 4.5)), ((875 - (self.lenValues * 2)) / self.lenValues), round(450 - (450 - (quicksort(self.values)[2] * 4.5)))])
-            number3 = self.main_font.render(str(quicksort(self.values)[2]), True, black)
-            self.display.blit(number3, [((((875 - (self.lenValues * 2)) / self.lenValues) * 3) + 30) / 1.25, 460])
-            # 4
-            pygame.draw.rect(self.display, black, [(((875 - (self.lenValues * 2)) / self.lenValues) * 3) +  32, round(450 - (quicksort(self.values)[3] * 4.5)), ((875 - (self.lenValues * 2)) / self.lenValues), round(450 - (450 - (quicksort(self.values)[3] * 4.5)))])
-            number4 = self.main_font.render(str(quicksort(self.values)[3]), True, black)
-            self.display.blit(number4, [((((875 - (self.lenValues * 2)) / self.lenValues) * 4) + 32) / 1.2, 460])
-            # 5
-            pygame.draw.rect(self.display, black, [(((875 - (self.lenValues * 2)) / self.lenValues) * 4) +  34, round(450 - (quicksort(self.values)[4] * 4.5)), ((875 - (self.lenValues * 2)) / self.lenValues), round(450 - (450 - (quicksort(self.values)[4] * 4.5)))])
-            number5 = self.main_font.render(str(quicksort(self.values)[4]), True, black)
-            self.display.blit(number5, [((((875 - (self.lenValues * 2)) / self.lenValues) * 5) + 34) / 1.17, 460])
-            # 6
-            pygame.draw.rect(self.display, black, [(((875 - (self.lenValues * 2)) / self.lenValues) * 5) +  36, round(450 - (quicksort(self.values)[5] * 4.5)), ((875 - (self.lenValues * 2)) / self.lenValues), round(450 - (450 - (quicksort(self.values)[5] * 4.5)))])
-            number6 = self.main_font.render(str(quicksort(self.values)[5]), True, black)
-            self.display.blit(number6, [((((875 - (self.lenValues * 2)) / self.lenValues) * 6) + 36) / 1.12, 460])
-            # 7
-            pygame.draw.rect(self.display, black, [(((875 - (self.lenValues * 2)) / self.lenValues) * 6) +  38, round(450 - (quicksort(self.values)[6] * 4.5)), ((875 - (self.lenValues * 2)) / self.lenValues), round(450 - (450 - (quicksort(self.values)[6] * 4.5)))])
-            number7 = self.main_font.render(str(quicksort(self.values)[6]), True, black)
-            self.display.blit(number7, [((((875 - (self.lenValues * 2)) / self.lenValues) * 7) + 38) / 1.1, 460])
-            # 8
-            pygame.draw.rect(self.display, black, [(((875 - (self.lenValues * 2)) / self.lenValues) * 7) +  40, round(450 - (quicksort(self.values)[7] * 4.5)), ((875 - (self.lenValues * 2)) / self.lenValues), round(450 - (450 - (quicksort(self.values)[7] * 4.5)))])
-            number8 = self.main_font.render(str(quicksort(self.values)[7]), True, black)
-            self.display.blit(number8, [((((875 - (self.lenValues * 2)) / self.lenValues) * 8) + 40) / 1.09, 460])
-            # 9
-            pygame.draw.rect(self.display, black, [(((875 - (self.lenValues * 2)) / self.lenValues) * 8) +  42, round(450 - (quicksort(self.values)[8] * 4.5)), ((875 - (self.lenValues * 2)) / self.lenValues), round(450 - (450 - (quicksort(self.values)[8] * 4.5)))])
-            number9 = self.main_font.render(str(quicksort(self.values)[8]), True, black)
-            self.display.blit(number9, [((((875 - (self.lenValues * 2)) / self.lenValues) * 9) + 42) / 1.07, 460])
+            bar1()
+            bar2()
+            bar3()
+            bar4()
+            bar5()
+            bar6()
+            bar7()
+            bar8()
+            bar9()
 
-            point1_x = 25
-            point1_y = round(450 - (quicksort(self.values)[0] * 4.5))
-            point1_y2 = (round(450 - (quicksort(self.values)[0] * 4.5))) + 2
-
-            point2_x = ((875 - (self.lenValues * 2)) / self.lenValues) + 28
-            point2_y = round(450 - (quicksort(self.values)[1] * 4.5))
-            point2_y2 = (round(450 - (quicksort(self.values)[1] * 4.5))) + 2
-
-            point3_x = (((875 - (self.lenValues * 2)) / self.lenValues) * 2) + 30
-            point3_y = round(450 - (quicksort(self.values)[2] * 4.5))
-            point3_y2 = (round(450 - (quicksort(self.values)[2] * 4.5))) + 2
-
-            point4_x = (((875 - (self.lenValues * 2)) / self.lenValues) * 3) +  32
-            point4_y = round(450 - (quicksort(self.values)[3] * 4.5))
-            point4_y2 = (round(450 - (quicksort(self.values)[3] * 4.5)) + 2)
-
-            point5_x = (((875 - (self.lenValues * 2)) / self.lenValues) * 4) +  34
-            point5_y = round(450 - (quicksort(self.values)[4] * 4.5))
-            point5_y2 = (round(450 - (quicksort(self.values)[4] * 4.5))) + 2
-
-            point6_x = (((875 - (self.lenValues * 2)) / self.lenValues) * 5) +  36
-            point6_y = round(450 - (quicksort(self.values)[5] * 4.5))
-            point6_y2 = (round(450 - (quicksort(self.values)[5] * 4.5))) + 2
-
-            point7_x = (((875 - (self.lenValues * 2)) / self.lenValues) * 6) +  38
-            point7_y = round(450 - (quicksort(self.values)[6] * 4.5))
-            point7_y2 = (round(450 - (quicksort(self.values)[6] * 4.5))) + 2
-
-            point8_x = (((875 - (self.lenValues * 2)) / self.lenValues) * 7) +  40
-            point8_y  = round(450 - (quicksort(self.values)[7] * 4.5))
-            point8_y2 = (round(450 - (quicksort(self.values)[7] * 4.5))) + 2
-
-            point9_x = (((875 - (self.lenValues * 2)) / self.lenValues) * 8) +  42
-            point9_y = round(450 - (quicksort(self.values)[8] * 4.5))
-            point9_y2 = (round(450 - (quicksort(self.values)[8] * 4.5))) + 2
 
             pygame.draw.polygon(self.display, green, [
             [point1_x, point1_y], [point1_x, point1_y2], [point2_x, point2_y2], [point3_x, point3_y2], [point4_x, point4_y2], [point5_x, point5_y2], [point6_x, point6_y2], [point7_x, point7_y2], [point8_x, point8_y2], [point9_x, point9_y2],
@@ -522,86 +411,17 @@ class Sorting:
             ])
 
         elif self.lenValues == 10:
-            # 1
-            pygame.draw.rect(self.display, black, [25, round(450 - (quicksort(self.values)[0] * 4.5)), ((875 - (self.lenValues * 2)) / self.lenValues), round(450 - (450 - (quicksort(self.values)[0] * 4.5)))])
-            number1 = self.main_font.render(str(quicksort(self.values)[0]), True, black)
-            self.display.blit(number1, [(((875 - (self.lenValues * 2)) / self.lenValues) + 25) / 2, 460])
-            # 2
-            pygame.draw.rect(self.display, black, [((875 - (self.lenValues * 2)) / self.lenValues) + 28, round(450 - (quicksort(self.values)[1] * 4.5)), ((875 - (self.lenValues * 2)) / self.lenValues), round(450 - (450 - (quicksort(self.values)[1] * 4.5)))])
-            number2 = self.main_font.render(str(quicksort(self.values)[1]), True, black)
-            self.display.blit(number2, [((((875 - (self.lenValues * 2)) / self.lenValues) * 2) + 28) / 1.5, 460])
-            # 3
-            pygame.draw.rect(self.display, black, [(((875 - (self.lenValues * 2)) / self.lenValues) * 2) + 30, round(450 - (quicksort(self.values)[2] * 4.5)), ((875 - (self.lenValues * 2)) / self.lenValues), round(450 - (450 - (quicksort(self.values)[2] * 4.5)))])
-            number3 = self.main_font.render(str(quicksort(self.values)[2]), True, black)
-            self.display.blit(number3, [((((875 - (self.lenValues * 2)) / self.lenValues) * 3) + 30) / 1.25, 460])
-            # 4
-            pygame.draw.rect(self.display, black, [(((875 - (self.lenValues * 2)) / self.lenValues) * 3) +  32, round(450 - (quicksort(self.values)[3] * 4.5)), ((875 - (self.lenValues * 2)) / self.lenValues), round(450 - (450 - (quicksort(self.values)[3] * 4.5)))])
-            number4 = self.main_font.render(str(quicksort(self.values)[3]), True, black)
-            self.display.blit(number4, [((((875 - (self.lenValues * 2)) / self.lenValues) * 4) + 32) / 1.2, 460])
-            # 5
-            pygame.draw.rect(self.display, black, [(((875 - (self.lenValues * 2)) / self.lenValues) * 4) +  34, round(450 - (quicksort(self.values)[4] * 4.5)), ((875 - (self.lenValues * 2)) / self.lenValues), round(450 - (450 - (quicksort(self.values)[4] * 4.5)))])
-            number5 = self.main_font.render(str(quicksort(self.values)[4]), True, black)
-            self.display.blit(number5, [((((875 - (self.lenValues * 2)) / self.lenValues) * 5) + 34) / 1.17, 460])
-            # 6
-            pygame.draw.rect(self.display, black, [(((875 - (self.lenValues * 2)) / self.lenValues) * 5) +  36, round(450 - (quicksort(self.values)[5] * 4.5)), ((875 - (self.lenValues * 2)) / self.lenValues), round(450 - (450 - (quicksort(self.values)[5] * 4.5)))])
-            number6 = self.main_font.render(str(quicksort(self.values)[5]), True, black)
-            self.display.blit(number6, [((((875 - (self.lenValues * 2)) / self.lenValues) * 6) + 36) / 1.12, 460])
-            # 7
-            pygame.draw.rect(self.display, black, [(((875 - (self.lenValues * 2)) / self.lenValues) * 6) +  38, round(450 - (quicksort(self.values)[6] * 4.5)), ((875 - (self.lenValues * 2)) / self.lenValues), round(450 - (450 - (quicksort(self.values)[6] * 4.5)))])
-            number7 = self.main_font.render(str(quicksort(self.values)[6]), True, black)
-            self.display.blit(number7, [((((875 - (self.lenValues * 2)) / self.lenValues) * 7) + 38) / 1.1, 460])
-            # 8
-            pygame.draw.rect(self.display, black, [(((875 - (self.lenValues * 2)) / self.lenValues) * 7) +  40, round(450 - (quicksort(self.values)[7] * 4.5)), ((875 - (self.lenValues * 2)) / self.lenValues), round(450 - (450 - (quicksort(self.values)[7] * 4.5)))])
-            number8 = self.main_font.render(str(quicksort(self.values)[7]), True, black)
-            self.display.blit(number8, [((((875 - (self.lenValues * 2)) / self.lenValues) * 8) + 40) / 1.09, 460])
-            # 9
-            pygame.draw.rect(self.display, black, [(((875 - (self.lenValues * 2)) / self.lenValues) * 8) +  42, round(450 - (quicksort(self.values)[8] * 4.5)), ((875 - (self.lenValues * 2)) / self.lenValues), round(450 - (450 - (quicksort(self.values)[8] * 4.5)))])
-            number9 = self.main_font.render(str(quicksort(self.values)[8]), True, black)
-            self.display.blit(number9, [((((875 - (self.lenValues * 2)) / self.lenValues) * 9) + 42) / 1.07, 460])
-            # 10
-            pygame.draw.rect(self.display, black, [(((875 - (self.lenValues * 2)) / self.lenValues) * 9) +  44, round(450 - (quicksort(self.values)[9] * 4.5)), ((875 - (self.lenValues * 2)) / self.lenValues), round(450 - (450 - (quicksort(self.values)[9] * 4.5)))])
-            number10 = self.main_font.render(str(quicksort(self.values)[9]), True, black)
-            self.display.blit(number10, [((((875 - (self.lenValues * 2)) / self.lenValues) * 10) + 44) / 1.075, 460])
+            bar1()
+            bar2()
+            bar3()
+            bar4()
+            bar5()
+            bar6()
+            bar7()
+            bar8()
+            bar9()
+            bar10()
 
-            point1_x = 25
-            point1_y = round(450 - (quicksort(self.values)[0] * 4.5))
-            point1_y2 = (round(450 - (quicksort(self.values)[0] * 4.5))) + 2
-
-            point2_x = ((875 - (self.lenValues * 2)) / self.lenValues) + 28
-            point2_y = round(450 - (quicksort(self.values)[1] * 4.5))
-            point2_y2 = (round(450 - (quicksort(self.values)[1] * 4.5))) + 2
-
-            point3_x = (((875 - (self.lenValues * 2)) / self.lenValues) * 2) + 30
-            point3_y = round(450 - (quicksort(self.values)[2] * 4.5))
-            point3_y2 = (round(450 - (quicksort(self.values)[2] * 4.5))) + 2
-
-            point4_x = (((875 - (self.lenValues * 2)) / self.lenValues) * 3) +  32
-            point4_y = round(450 - (quicksort(self.values)[3] * 4.5))
-            point4_y2 = (round(450 - (quicksort(self.values)[3] * 4.5)) + 2)
-
-            point5_x = (((875 - (self.lenValues * 2)) / self.lenValues) * 4) +  34
-            point5_y = round(450 - (quicksort(self.values)[4] * 4.5))
-            point5_y2 = (round(450 - (quicksort(self.values)[4] * 4.5))) + 2
-
-            point6_x = (((875 - (self.lenValues * 2)) / self.lenValues) * 5) +  36
-            point6_y = round(450 - (quicksort(self.values)[5] * 4.5))
-            point6_y2 = (round(450 - (quicksort(self.values)[5] * 4.5))) + 2
-
-            point7_x = (((875 - (self.lenValues * 2)) / self.lenValues) * 6) +  38
-            point7_y = round(450 - (quicksort(self.values)[6] * 4.5))
-            point7_y2 = (round(450 - (quicksort(self.values)[6] * 4.5))) + 2
-
-            point8_x = (((875 - (self.lenValues * 2)) / self.lenValues) * 7) +  40
-            point8_y  = round(450 - (quicksort(self.values)[7] * 4.5))
-            point8_y2 = (round(450 - (quicksort(self.values)[7] * 4.5))) + 2
-
-            point9_x = (((875 - (self.lenValues * 2)) / self.lenValues) * 8) +  42
-            point9_y = round(450 - (quicksort(self.values)[8] * 4.5))
-            point9_y2 = (round(450 - (quicksort(self.values)[8] * 4.5))) + 2
-
-            point10_x = (((875 - (self.lenValues * 2)) / self.lenValues) * 9) + 44
-            point10_y = round(450 - (quicksort(self.values)[9] * 4.5))
-            point10_y2 = (round(450 - (quicksort(self.values)[9] * 4.5))) + 2
 
             pygame.draw.polygon(self.display, green, [
             [point1_x, point1_y], [point1_x, point1_y2], [point2_x, point2_y2], [point3_x, point3_y2],[point4_x, point4_y2], [point5_x, point5_y2], [point6_x, point6_y2], [point7_x, point7_y2], [point8_x, point8_y2], [point9_x, point9_y2], [point10_x, point10_y2],
@@ -609,94 +429,18 @@ class Sorting:
             ])
 
         elif self.lenValues == 11:
-            # 1
-            pygame.draw.rect(self.display, black, [25, round(450 - (quicksort(self.values)[0] * 4.5)), ((875 - (self.lenValues * 2)) / self.lenValues), round(450 - (450 - (quicksort(self.values)[0] * 4.5)))])
-            number1 = self.main_font.render(str(quicksort(self.values)[0]), True, black)
-            self.display.blit(number1, [(((875 - (self.lenValues * 2)) / self.lenValues) + 25) / 2, 460])
-            # 2
-            pygame.draw.rect(self.display, black, [((875 - (self.lenValues * 2)) / self.lenValues) + 28, round(450 - (quicksort(self.values)[1] * 4.5)), ((875 - (self.lenValues * 2)) / self.lenValues), round(450 - (450 - (quicksort(self.values)[1] * 4.5)))])
-            number2 = self.main_font.render(str(quicksort(self.values)[1]), True, black)
-            self.display.blit(number2, [((((875 - (self.lenValues * 2)) / self.lenValues) * 2) + 28) / 1.5, 460])
-            # 3
-            pygame.draw.rect(self.display, black, [(((875 - (self.lenValues * 2)) / self.lenValues) * 2) + 30, round(450 - (quicksort(self.values)[2] * 4.5)), ((875 - (self.lenValues * 2)) / self.lenValues), round(450 - (450 - (quicksort(self.values)[2] * 4.5)))])
-            number3 = self.main_font.render(str(quicksort(self.values)[2]), True, black)
-            self.display.blit(number3, [((((875 - (self.lenValues * 2)) / self.lenValues) * 3) + 30) / 1.25, 460])
-            # 4
-            pygame.draw.rect(self.display, black, [(((875 - (self.lenValues * 2)) / self.lenValues) * 3) +  32, round(450 - (quicksort(self.values)[3] * 4.5)), ((875 - (self.lenValues * 2)) / self.lenValues), round(450 - (450 - (quicksort(self.values)[3] * 4.5)))])
-            number4 = self.main_font.render(str(quicksort(self.values)[3]), True, black)
-            self.display.blit(number4, [((((875 - (self.lenValues * 2)) / self.lenValues) * 4) + 32) / 1.2, 460])
-            # 5
-            pygame.draw.rect(self.display, black, [(((875 - (self.lenValues * 2)) / self.lenValues) * 4) +  34, round(450 - (quicksort(self.values)[4] * 4.5)), ((875 - (self.lenValues * 2)) / self.lenValues), round(450 - (450 - (quicksort(self.values)[4] * 4.5)))])
-            number5 = self.main_font.render(str(quicksort(self.values)[4]), True, black)
-            self.display.blit(number5, [((((875 - (self.lenValues * 2)) / self.lenValues) * 5) + 34) / 1.17, 460])
-            # 6
-            pygame.draw.rect(self.display, black, [(((875 - (self.lenValues * 2)) / self.lenValues) * 5) +  36, round(450 - (quicksort(self.values)[5] * 4.5)), ((875 - (self.lenValues * 2)) / self.lenValues), round(450 - (450 - (quicksort(self.values)[5] * 4.5)))])
-            number6 = self.main_font.render(str(quicksort(self.values)[5]), True, black)
-            self.display.blit(number6, [((((875 - (self.lenValues * 2)) / self.lenValues) * 6) + 36) / 1.12, 460])
-            # 7
-            pygame.draw.rect(self.display, black, [(((875 - (self.lenValues * 2)) / self.lenValues) * 6) +  38, round(450 - (quicksort(self.values)[6] * 4.5)), ((875 - (self.lenValues * 2)) / self.lenValues), round(450 - (450 - (quicksort(self.values)[6] * 4.5)))])
-            number7 = self.main_font.render(str(quicksort(self.values)[6]), True, black)
-            self.display.blit(number7, [((((875 - (self.lenValues * 2)) / self.lenValues) * 7) + 38) / 1.1, 460])
-            # 8
-            pygame.draw.rect(self.display, black, [(((875 - (self.lenValues * 2)) / self.lenValues) * 7) +  40, round(450 - (quicksort(self.values)[7] * 4.5)), ((875 - (self.lenValues * 2)) / self.lenValues), round(450 - (450 - (quicksort(self.values)[7] * 4.5)))])
-            number8 = self.main_font.render(str(quicksort(self.values)[7]), True, black)
-            self.display.blit(number8, [((((875 - (self.lenValues * 2)) / self.lenValues) * 8) + 40) / 1.09, 460])
-            # 9
-            pygame.draw.rect(self.display, black, [(((875 - (self.lenValues * 2)) / self.lenValues) * 8) +  42, round(450 - (quicksort(self.values)[8] * 4.5)), ((875 - (self.lenValues * 2)) / self.lenValues), round(450 - (450 - (quicksort(self.values)[8] * 4.5)))])
-            number9 = self.main_font.render(str(quicksort(self.values)[8]), True, black)
-            self.display.blit(number9, [((((875 - (self.lenValues * 2)) / self.lenValues) * 9) + 42) / 1.07, 460])
-            # 10
-            pygame.draw.rect(self.display, black, [(((875 - (self.lenValues * 2)) / self.lenValues) * 9) +  44, round(450 - (quicksort(self.values)[9] * 4.5)), ((875 - (self.lenValues * 2)) / self.lenValues), round(450 - (450 - (quicksort(self.values)[9] * 4.5)))])
-            number10 = self.main_font.render(str(quicksort(self.values)[9]), True, black)
-            self.display.blit(number10, [((((875 - (self.lenValues * 2)) / self.lenValues) * 10) + 44) / 1.075, 460])
-            # 11
-            pygame.draw.rect(self.display, black, [(((875 - (self.lenValues * 2)) / self.lenValues) * 10) +  46, round(450 - (quicksort(self.values)[10] * 4.5)), ((875 - (self.lenValues * 2)) / self.lenValues), round(450 - (450 - (quicksort(self.values)[10] * 4.5)))])
-            number11 = self.main_font.render(str(quicksort(self.values)[10]), True, black)
-            self.display.blit(number11, [((((875 - (self.lenValues * 2)) / self.lenValues) * 11) + 46) / 1.070, 460])
+            bar1()
+            bar2()
+            bar3()
+            bar4()
+            bar5()
+            bar6()
+            bar7()
+            bar8()
+            bar9()
+            bar10()
+            bar11()
 
-            point1_x = 25
-            point1_y = round(450 - (quicksort(self.values)[0] * 4.5))
-            point1_y2 = (round(450 - (quicksort(self.values)[0] * 4.5))) + 2
-
-            point2_x = ((875 - (self.lenValues * 2)) / self.lenValues) + 28
-            point2_y = round(450 - (quicksort(self.values)[1] * 4.5))
-            point2_y2 = (round(450 - (quicksort(self.values)[1] * 4.5))) + 2
-
-            point3_x = (((875 - (self.lenValues * 2)) / self.lenValues) * 2) + 30
-            point3_y = round(450 - (quicksort(self.values)[2] * 4.5))
-            point3_y2 = (round(450 - (quicksort(self.values)[2] * 4.5))) + 2
-
-            point4_x = (((875 - (self.lenValues * 2)) / self.lenValues) * 3) +  32
-            point4_y = round(450 - (quicksort(self.values)[3] * 4.5))
-            point4_y2 = (round(450 - (quicksort(self.values)[3] * 4.5)) + 2)
-
-            point5_x = (((875 - (self.lenValues * 2)) / self.lenValues) * 4) +  34
-            point5_y = round(450 - (quicksort(self.values)[4] * 4.5))
-            point5_y2 = (round(450 - (quicksort(self.values)[4] * 4.5))) + 2
-
-            point6_x = (((875 - (self.lenValues * 2)) / self.lenValues) * 5) +  36
-            point6_y = round(450 - (quicksort(self.values)[5] * 4.5))
-            point6_y2 = (round(450 - (quicksort(self.values)[5] * 4.5))) + 2
-
-            point7_x = (((875 - (self.lenValues * 2)) / self.lenValues) * 6) +  38
-            point7_y = round(450 - (quicksort(self.values)[6] * 4.5))
-            point7_y2 = (round(450 - (quicksort(self.values)[6] * 4.5))) + 2
-
-            point8_x = (((875 - (self.lenValues * 2)) / self.lenValues) * 7) +  40
-            point8_y  = round(450 - (quicksort(self.values)[7] * 4.5))
-            point8_y2 = (round(450 - (quicksort(self.values)[7] * 4.5))) + 2
-
-            point9_x = (((875 - (self.lenValues * 2)) / self.lenValues) * 8) +  42
-            point9_y = round(450 - (quicksort(self.values)[8] * 4.5))
-            point9_y2 = (round(450 - (quicksort(self.values)[8] * 4.5))) + 2
-
-            point10_x = (((875 - (self.lenValues * 2)) / self.lenValues) * 9) + 44
-            point10_y = round(450 - (quicksort(self.values)[9] * 4.5))
-            point10_y2 = (round(450 - (quicksort(self.values)[9] * 4.5))) + 2
-
-            point11_x = (((875 - (self.lenValues * 2)) / self.lenValues) * 10) +  46
-            point11_y = round(450 - (quicksort(self.values)[10] * 4.5))
-            point11_y2 = (round(450 - (quicksort(self.values)[10] * 4.5))) + 2
 
             pygame.draw.polygon(self.display, green, [
             [point1_x, point1_y], [point1_x, point1_y2], [point2_x, point2_y2], [point3_x, point3_y2],[point4_x, point4_y2], [point5_x, point5_y2], [point6_x, point6_y2], [point7_x, point7_y2], [point8_x, point8_y2], [point9_x, point9_y2], [point10_x, point10_y2], [point11_x, point11_y2],
@@ -704,102 +448,19 @@ class Sorting:
             ])
 
         elif self.lenValues == 12:
-            # 1
-            pygame.draw.rect(self.display, black, [25, round(450 - (quicksort(self.values)[0] * 4.5)), ((875 - (self.lenValues * 2)) / self.lenValues), round(450 - (450 - (quicksort(self.values)[0] * 4.5)))])
-            number1 = self.main_font.render(str(quicksort(self.values)[0]), True, black)
-            self.display.blit(number1, [(((875 - (self.lenValues * 2)) / self.lenValues) + 25) / 2, 460])
-            # 2
-            pygame.draw.rect(self.display, black, [((875 - (self.lenValues * 2)) / self.lenValues) + 28, round(450 - (quicksort(self.values)[1] * 4.5)), ((875 - (self.lenValues * 2)) / self.lenValues), round(450 - (450 - (quicksort(self.values)[1] * 4.5)))])
-            number2 = self.main_font.render(str(quicksort(self.values)[1]), True, black)
-            self.display.blit(number2, [((((875 - (self.lenValues * 2)) / self.lenValues) * 2) + 28) / 1.5, 460])
-            # 3
-            pygame.draw.rect(self.display, black, [(((875 - (self.lenValues * 2)) / self.lenValues) * 2) + 30, round(450 - (quicksort(self.values)[2] * 4.5)), ((875 - (self.lenValues * 2)) / self.lenValues), round(450 - (450 - (quicksort(self.values)[2] * 4.5)))])
-            number3 = self.main_font.render(str(quicksort(self.values)[2]), True, black)
-            self.display.blit(number3, [((((875 - (self.lenValues * 2)) / self.lenValues) * 3) + 30) / 1.25, 460])
-            # 4
-            pygame.draw.rect(self.display, black, [(((875 - (self.lenValues * 2)) / self.lenValues) * 3) +  32, round(450 - (quicksort(self.values)[3] * 4.5)), ((875 - (self.lenValues * 2)) / self.lenValues), round(450 - (450 - (quicksort(self.values)[3] * 4.5)))])
-            number4 = self.main_font.render(str(quicksort(self.values)[3]), True, black)
-            self.display.blit(number4, [((((875 - (self.lenValues * 2)) / self.lenValues) * 4) + 32) / 1.2, 460])
-            # 5
-            pygame.draw.rect(self.display, black, [(((875 - (self.lenValues * 2)) / self.lenValues) * 4) +  34, round(450 - (quicksort(self.values)[4] * 4.5)), ((875 - (self.lenValues * 2)) / self.lenValues), round(450 - (450 - (quicksort(self.values)[4] * 4.5)))])
-            number5 = self.main_font.render(str(quicksort(self.values)[4]), True, black)
-            self.display.blit(number5, [((((875 - (self.lenValues * 2)) / self.lenValues) * 5) + 34) / 1.17, 460])
-            # 6
-            pygame.draw.rect(self.display, black, [(((875 - (self.lenValues * 2)) / self.lenValues) * 5) +  36, round(450 - (quicksort(self.values)[5] * 4.5)), ((875 - (self.lenValues * 2)) / self.lenValues), round(450 - (450 - (quicksort(self.values)[5] * 4.5)))])
-            number6 = self.main_font.render(str(quicksort(self.values)[5]), True, black)
-            self.display.blit(number6, [((((875 - (self.lenValues * 2)) / self.lenValues) * 6) + 36) / 1.12, 460])
-            # 7
-            pygame.draw.rect(self.display, black, [(((875 - (self.lenValues * 2)) / self.lenValues) * 6) +  38, round(450 - (quicksort(self.values)[6] * 4.5)), ((875 - (self.lenValues * 2)) / self.lenValues), round(450 - (450 - (quicksort(self.values)[6] * 4.5)))])
-            number7 = self.main_font.render(str(quicksort(self.values)[6]), True, black)
-            self.display.blit(number7, [((((875 - (self.lenValues * 2)) / self.lenValues) * 7) + 38) / 1.1, 460])
-            # 8
-            pygame.draw.rect(self.display, black, [(((875 - (self.lenValues * 2)) / self.lenValues) * 7) +  40, round(450 - (quicksort(self.values)[7] * 4.5)), ((875 - (self.lenValues * 2)) / self.lenValues), round(450 - (450 - (quicksort(self.values)[7] * 4.5)))])
-            number8 = self.main_font.render(str(quicksort(self.values)[7]), True, black)
-            self.display.blit(number8, [((((875 - (self.lenValues * 2)) / self.lenValues) * 8) + 40) / 1.09, 460])
-            # 9
-            pygame.draw.rect(self.display, black, [(((875 - (self.lenValues * 2)) / self.lenValues) * 8) +  42, round(450 - (quicksort(self.values)[8] * 4.5)), ((875 - (self.lenValues * 2)) / self.lenValues), round(450 - (450 - (quicksort(self.values)[8] * 4.5)))])
-            number9 = self.main_font.render(str(quicksort(self.values)[8]), True, black)
-            self.display.blit(number9, [((((875 - (self.lenValues * 2)) / self.lenValues) * 9) + 42) / 1.07, 460])
-            # 10
-            pygame.draw.rect(self.display, black, [(((875 - (self.lenValues * 2)) / self.lenValues) * 9) +  44, round(450 - (quicksort(self.values)[9] * 4.5)), ((875 - (self.lenValues * 2)) / self.lenValues), round(450 - (450 - (quicksort(self.values)[9] * 4.5)))])
-            number10 = self.main_font.render(str(quicksort(self.values)[9]), True, black)
-            self.display.blit(number10, [((((875 - (self.lenValues * 2)) / self.lenValues) * 10) + 44) / 1.075, 460])
-            # 11
-            pygame.draw.rect(self.display, black, [(((875 - (self.lenValues * 2)) / self.lenValues) * 10) +  46, round(450 - (quicksort(self.values)[10] * 4.5)), ((875 - (self.lenValues * 2)) / self.lenValues), round(450 - (450 - (quicksort(self.values)[10] * 4.5)))])
-            number11 = self.main_font.render(str(quicksort(self.values)[10]), True, black)
-            self.display.blit(number11, [((((875 - (self.lenValues * 2)) / self.lenValues) * 11) + 46) / 1.070, 460])
-            # 12
-            pygame.draw.rect(self.display, black, [(((875 - (self.lenValues * 2)) / self.lenValues) * 11) +  48, round(450 - (quicksort(self.values)[11] * 4.5)), ((875 - (self.lenValues * 2)) / self.lenValues), round(450 - (450 - (quicksort(self.values)[11] * 4.5)))])
-            number12 = self.main_font.render(str(quicksort(self.values)[11]), True, black)
-            self.display.blit(number12, [((((875 - (self.lenValues * 2)) / self.lenValues) * 12) + 28) / 1.045, 460])
+            bar1()
+            bar2()
+            bar3()
+            bar4()
+            bar5()
+            bar6()
+            bar7()
+            bar8()
+            bar9()
+            bar10()
+            bar11()
+            bar12()
 
-            point1_x = 25
-            point1_y = round(450 - (quicksort(self.values)[0] * 4.5))
-            point1_y2 = (round(450 - (quicksort(self.values)[0] * 4.5))) + 2
-
-            point2_x = ((875 - (self.lenValues * 2)) / self.lenValues) + 28
-            point2_y = round(450 - (quicksort(self.values)[1] * 4.5))
-            point2_y2 = (round(450 - (quicksort(self.values)[1] * 4.5))) + 2
-
-            point3_x = (((875 - (self.lenValues * 2)) / self.lenValues) * 2) + 30
-            point3_y = round(450 - (quicksort(self.values)[2] * 4.5))
-            point3_y2 = (round(450 - (quicksort(self.values)[2] * 4.5))) + 2
-
-            point4_x = (((875 - (self.lenValues * 2)) / self.lenValues) * 3) +  32
-            point4_y = round(450 - (quicksort(self.values)[3] * 4.5))
-            point4_y2 = (round(450 - (quicksort(self.values)[3] * 4.5)) + 2)
-
-            point5_x = (((875 - (self.lenValues * 2)) / self.lenValues) * 4) +  34
-            point5_y = round(450 - (quicksort(self.values)[4] * 4.5))
-            point5_y2 = (round(450 - (quicksort(self.values)[4] * 4.5))) + 2
-
-            point6_x = (((875 - (self.lenValues * 2)) / self.lenValues) * 5) +  36
-            point6_y = round(450 - (quicksort(self.values)[5] * 4.5))
-            point6_y2 = (round(450 - (quicksort(self.values)[5] * 4.5))) + 2
-
-            point7_x = (((875 - (self.lenValues * 2)) / self.lenValues) * 6) +  38
-            point7_y = round(450 - (quicksort(self.values)[6] * 4.5))
-            point7_y2 = (round(450 - (quicksort(self.values)[6] * 4.5))) + 2
-
-            point8_x = (((875 - (self.lenValues * 2)) / self.lenValues) * 7) +  40
-            point8_y  = round(450 - (quicksort(self.values)[7] * 4.5))
-            point8_y2 = (round(450 - (quicksort(self.values)[7] * 4.5))) + 2
-
-            point9_x = (((875 - (self.lenValues * 2)) / self.lenValues) * 8) +  42
-            point9_y = round(450 - (quicksort(self.values)[8] * 4.5))
-            point9_y2 = (round(450 - (quicksort(self.values)[8] * 4.5))) + 2
-
-            point10_x = (((875 - (self.lenValues * 2)) / self.lenValues) * 9) + 44
-            point10_y = round(450 - (quicksort(self.values)[9] * 4.5))
-            point10_y2 = (round(450 - (quicksort(self.values)[9] * 4.5))) + 2
-
-            point11_x = (((875 - (self.lenValues * 2)) / self.lenValues) * 10) +  46
-            point11_y = round(450 - (quicksort(self.values)[10] * 4.5))
-            point11_y2 = (round(450 - (quicksort(self.values)[10] * 4.5))) + 2
-
-            point12_x = (((875 - (self.lenValues * 2)) / self.lenValues) * 11) +  48
-            point12_y =  round(450 - (quicksort(self.values)[11] * 4.5))
-            point12_y2 = (round(450 - (quicksort(self.values)[11] * 4.5))) + 2
 
             pygame.draw.polygon(self.display, green, [
             [point1_x, point1_y], [point1_x, point1_y2], [point2_x, point2_y2], [point3_x, point3_y2],[point4_x, point4_y2], [point5_x, point5_y2], [point6_x, point6_y2], [point7_x, point7_y2], [point8_x, point8_y2], [point9_x, point9_y2], [point10_x, point10_y2], [point11_x, point11_y2], [point12_x, point12_y2],
@@ -807,110 +468,20 @@ class Sorting:
             ])
 
         elif self.lenValues == 13:
-            # 1
-            pygame.draw.rect(self.display, black, [25, round(450 - (quicksort(self.values)[0] * 4.5)), ((875 - (self.lenValues * 2)) / self.lenValues), round(450 - (450 - (quicksort(self.values)[0] * 4.5)))])
-            number1 = self.main_font.render(str(quicksort(self.values)[0]), True, black)
-            self.display.blit(number1, [(((875 - (self.lenValues * 2)) / self.lenValues) + 25) / 2, 460])
-            # 2
-            pygame.draw.rect(self.display, black, [((875 - (self.lenValues * 2)) / self.lenValues) + 28, round(450 - (quicksort(self.values)[1] * 4.5)), ((875 - (self.lenValues * 2)) / self.lenValues), round(450 - (450 - (quicksort(self.values)[1] * 4.5)))])
-            number2 = self.main_font.render(str(quicksort(self.values)[1]), True, black)
-            self.display.blit(number2, [((((875 - (self.lenValues * 2)) / self.lenValues) * 2) + 28) / 1.5, 460])
-            # 3
-            pygame.draw.rect(self.display, black, [(((875 - (self.lenValues * 2)) / self.lenValues) * 2) + 30, round(450 - (quicksort(self.values)[2] * 4.5)), ((875 - (self.lenValues * 2)) / self.lenValues), round(450 - (450 - (quicksort(self.values)[2] * 4.5)))])
-            number3 = self.main_font.render(str(quicksort(self.values)[2]), True, black)
-            self.display.blit(number3, [((((875 - (self.lenValues * 2)) / self.lenValues) * 3) + 30) / 1.25, 460])
-            # 4
-            pygame.draw.rect(self.display, black, [(((875 - (self.lenValues * 2)) / self.lenValues) * 3) +  32, round(450 - (quicksort(self.values)[3] * 4.5)), ((875 - (self.lenValues * 2)) / self.lenValues), round(450 - (450 - (quicksort(self.values)[3] * 4.5)))])
-            number4 = self.main_font.render(str(quicksort(self.values)[3]), True, black)
-            self.display.blit(number4, [((((875 - (self.lenValues * 2)) / self.lenValues) * 4) + 32) / 1.2, 460])
-            # 5
-            pygame.draw.rect(self.display, black, [(((875 - (self.lenValues * 2)) / self.lenValues) * 4) +  34, round(450 - (quicksort(self.values)[4] * 4.5)), ((875 - (self.lenValues * 2)) / self.lenValues), round(450 - (450 - (quicksort(self.values)[4] * 4.5)))])
-            number5 = self.main_font.render(str(quicksort(self.values)[4]), True, black)
-            self.display.blit(number5, [((((875 - (self.lenValues * 2)) / self.lenValues) * 5) + 34) / 1.17, 460])
-            # 6
-            pygame.draw.rect(self.display, black, [(((875 - (self.lenValues * 2)) / self.lenValues) * 5) +  36, round(450 - (quicksort(self.values)[5] * 4.5)), ((875 - (self.lenValues * 2)) / self.lenValues), round(450 - (450 - (quicksort(self.values)[5] * 4.5)))])
-            number6 = self.main_font.render(str(quicksort(self.values)[5]), True, black)
-            self.display.blit(number6, [((((875 - (self.lenValues * 2)) / self.lenValues) * 6) + 36) / 1.12, 460])
-            # 7
-            pygame.draw.rect(self.display, black, [(((875 - (self.lenValues * 2)) / self.lenValues) * 6) +  38, round(450 - (quicksort(self.values)[6] * 4.5)), ((875 - (self.lenValues * 2)) / self.lenValues), round(450 - (450 - (quicksort(self.values)[6] * 4.5)))])
-            number7 = self.main_font.render(str(quicksort(self.values)[6]), True, black)
-            self.display.blit(number7, [((((875 - (self.lenValues * 2)) / self.lenValues) * 7) + 38) / 1.1, 460])
-            # 8
-            pygame.draw.rect(self.display, black, [(((875 - (self.lenValues * 2)) / self.lenValues) * 7) +  40, round(450 - (quicksort(self.values)[7] * 4.5)), ((875 - (self.lenValues * 2)) / self.lenValues), round(450 - (450 - (quicksort(self.values)[7] * 4.5)))])
-            number8 = self.main_font.render(str(quicksort(self.values)[7]), True, black)
-            self.display.blit(number8, [((((875 - (self.lenValues * 2)) / self.lenValues) * 8) + 40) / 1.09, 460])
-            # 9
-            pygame.draw.rect(self.display, black, [(((875 - (self.lenValues * 2)) / self.lenValues) * 8) +  42, round(450 - (quicksort(self.values)[8] * 4.5)), ((875 - (self.lenValues * 2)) / self.lenValues), round(450 - (450 - (quicksort(self.values)[8] * 4.5)))])
-            number9 = self.main_font.render(str(quicksort(self.values)[8]), True, black)
-            self.display.blit(number9, [((((875 - (self.lenValues * 2)) / self.lenValues) * 9) + 42) / 1.07, 460])
-            # 10
-            pygame.draw.rect(self.display, black, [(((875 - (self.lenValues * 2)) / self.lenValues) * 9) +  44, round(450 - (quicksort(self.values)[9] * 4.5)), ((875 - (self.lenValues * 2)) / self.lenValues), round(450 - (450 - (quicksort(self.values)[9] * 4.5)))])
-            number10 = self.main_font.render(str(quicksort(self.values)[9]), True, black)
-            self.display.blit(number10, [((((875 - (self.lenValues * 2)) / self.lenValues) * 10) + 44) / 1.075, 460])
-            # 11
-            pygame.draw.rect(self.display, black, [(((875 - (self.lenValues * 2)) / self.lenValues) * 10) +  46, round(450 - (quicksort(self.values)[10] * 4.5)), ((875 - (self.lenValues * 2)) / self.lenValues), round(450 - (450 - (quicksort(self.values)[10] * 4.5)))])
-            number11 = self.main_font.render(str(quicksort(self.values)[10]), True, black)
-            self.display.blit(number11, [((((875 - (self.lenValues * 2)) / self.lenValues) * 11) + 46) / 1.070, 460])
-            # 12
-            pygame.draw.rect(self.display, black, [(((875 - (self.lenValues * 2)) / self.lenValues) * 11) +  48, round(450 - (quicksort(self.values)[11] * 4.5)), ((875 - (self.lenValues * 2)) / self.lenValues), round(450 - (450 - (quicksort(self.values)[11] * 4.5)))])
-            number12 = self.main_font.render(str(quicksort(self.values)[11]), True, black)
-            self.display.blit(number12, [((((875 - (self.lenValues * 2)) / self.lenValues) * 12) + 28) / 1.045, 460])
-            # 13
-            pygame.draw.rect(self.display, black, [(((875 - (self.lenValues * 2)) / self.lenValues) * 12) + 50, round(450 - (quicksort(self.values)[12] * 4.5)), ((875 - (self.lenValues * 2)) / self.lenValues), round(450 - (450 - (quicksort(self.values)[12] * 4.5)))])
-            number13 = self.main_font.render(str(quicksort(self.values)[12]), True, black)
-            self.display.blit(number13, [((((875 - (self.lenValues * 2)) / self.lenValues) * 13) + 50) / 1.060, 460])
+            bar1()
+            bar2()
+            bar3()
+            bar4()
+            bar5()
+            bar6()
+            bar7()
+            bar8()
+            bar9()
+            bar10()
+            bar11()
+            bar12()
+            bar13()
 
-            point1_x = 25
-            point1_y = round(450 - (quicksort(self.values)[0] * 4.5))
-            point1_y2 = (round(450 - (quicksort(self.values)[0] * 4.5))) + 2
-
-            point2_x = ((875 - (self.lenValues * 2)) / self.lenValues) + 28
-            point2_y = round(450 - (quicksort(self.values)[1] * 4.5))
-            point2_y2 = (round(450 - (quicksort(self.values)[1] * 4.5))) + 2
-
-            point3_x = (((875 - (self.lenValues * 2)) / self.lenValues) * 2) + 30
-            point3_y = round(450 - (quicksort(self.values)[2] * 4.5))
-            point3_y2 = (round(450 - (quicksort(self.values)[2] * 4.5))) + 2
-
-            point4_x = (((875 - (self.lenValues * 2)) / self.lenValues) * 3) +  32
-            point4_y = round(450 - (quicksort(self.values)[3] * 4.5))
-            point4_y2 = (round(450 - (quicksort(self.values)[3] * 4.5)) + 2)
-
-            point5_x = (((875 - (self.lenValues * 2)) / self.lenValues) * 4) +  34
-            point5_y = round(450 - (quicksort(self.values)[4] * 4.5))
-            point5_y2 = (round(450 - (quicksort(self.values)[4] * 4.5))) + 2
-
-            point6_x = (((875 - (self.lenValues * 2)) / self.lenValues) * 5) +  36
-            point6_y = round(450 - (quicksort(self.values)[5] * 4.5))
-            point6_y2 = (round(450 - (quicksort(self.values)[5] * 4.5))) + 2
-
-            point7_x = (((875 - (self.lenValues * 2)) / self.lenValues) * 6) +  38
-            point7_y = round(450 - (quicksort(self.values)[6] * 4.5))
-            point7_y2 = (round(450 - (quicksort(self.values)[6] * 4.5))) + 2
-
-            point8_x = (((875 - (self.lenValues * 2)) / self.lenValues) * 7) +  40
-            point8_y  = round(450 - (quicksort(self.values)[7] * 4.5))
-            point8_y2 = (round(450 - (quicksort(self.values)[7] * 4.5))) + 2
-
-            point9_x = (((875 - (self.lenValues * 2)) / self.lenValues) * 8) +  42
-            point9_y = round(450 - (quicksort(self.values)[8] * 4.5))
-            point9_y2 = (round(450 - (quicksort(self.values)[8] * 4.5))) + 2
-
-            point10_x = (((875 - (self.lenValues * 2)) / self.lenValues) * 9) + 44
-            point10_y = round(450 - (quicksort(self.values)[9] * 4.5))
-            point10_y2 = (round(450 - (quicksort(self.values)[9] * 4.5))) + 2
-
-            point11_x = (((875 - (self.lenValues * 2)) / self.lenValues) * 10) +  46
-            point11_y = round(450 - (quicksort(self.values)[10] * 4.5))
-            point11_y2 = (round(450 - (quicksort(self.values)[10] * 4.5))) + 2
-
-            point12_x = (((875 - (self.lenValues * 2)) / self.lenValues) * 11) +  48
-            point12_y =  round(450 - (quicksort(self.values)[11] * 4.5))
-            point12_y2 = (round(450 - (quicksort(self.values)[11] * 4.5))) + 2
-
-            point13_x = (((875 - (self.lenValues * 2)) / self.lenValues) * 12) +  50
-            point13_y = round(450 - (quicksort(self.values)[12] * 4.5))
-            point13_y2 = (round(450 - (quicksort(self.values)[12] * 4.5))) + 2
 
             pygame.draw.polygon(self.display, green, [
             [point1_x, point1_y], [point1_x, point1_y2], [point2_x, point2_y2], [point3_x, point3_y2],[point4_x, point4_y2], [point5_x, point5_y2], [point6_x, point6_y2], [point7_x, point7_y2], [point8_x, point8_y2], [point9_x, point9_y2], [point10_x, point10_y2], [point11_x, point11_y2], [point12_x, point12_y2], [point13_x, point13_y2],
@@ -918,119 +489,21 @@ class Sorting:
             ])
 
         elif self.lenValues == 14:
-            # 1
-            pygame.draw.rect(self.display, black, [25, round(450 - (quicksort(self.values)[0] * 4.5)), ((875 - (self.lenValues * 2)) / self.lenValues), round(450 - (450 - (quicksort(self.values)[0] * 4.5)))])
-            number1 = self.main_font.render(str(quicksort(self.values)[0]), True, black)
-            self.display.blit(number1, [(((875 - (self.lenValues * 2)) / self.lenValues) + 25) / 2, 460])
-            # 2
-            pygame.draw.rect(self.display, black, [((875 - (self.lenValues * 2)) / self.lenValues) + 28, round(450 - (quicksort(self.values)[1] * 4.5)), ((875 - (self.lenValues * 2)) / self.lenValues), round(450 - (450 - (quicksort(self.values)[1] * 4.5)))])
-            number2 = self.main_font.render(str(quicksort(self.values)[1]), True, black)
-            self.display.blit(number2, [((((875 - (self.lenValues * 2)) / self.lenValues) * 2) + 28) / 1.5, 460])
-            # 3
-            pygame.draw.rect(self.display, black, [(((875 - (self.lenValues * 2)) / self.lenValues) * 2) + 30, round(450 - (quicksort(self.values)[2] * 4.5)), ((875 - (self.lenValues * 2)) / self.lenValues), round(450 - (450 - (quicksort(self.values)[2] * 4.5)))])
-            number3 = self.main_font.render(str(quicksort(self.values)[2]), True, black)
-            self.display.blit(number3, [((((875 - (self.lenValues * 2)) / self.lenValues) * 3) + 30) / 1.25, 460])
-            # 4
-            pygame.draw.rect(self.display, black, [(((875 - (self.lenValues * 2)) / self.lenValues) * 3) +  32, round(450 - (quicksort(self.values)[3] * 4.5)), ((875 - (self.lenValues * 2)) / self.lenValues), round(450 - (450 - (quicksort(self.values)[3] * 4.5)))])
-            number4 = self.main_font.render(str(quicksort(self.values)[3]), True, black)
-            self.display.blit(number4, [((((875 - (self.lenValues * 2)) / self.lenValues) * 4) + 32) / 1.2, 460])
-            # 5
-            pygame.draw.rect(self.display, black, [(((875 - (self.lenValues * 2)) / self.lenValues) * 4) +  34, round(450 - (quicksort(self.values)[4] * 4.5)), ((875 - (self.lenValues * 2)) / self.lenValues), round(450 - (450 - (quicksort(self.values)[4] * 4.5)))])
-            number5 = self.main_font.render(str(quicksort(self.values)[4]), True, black)
-            self.display.blit(number5, [((((875 - (self.lenValues * 2)) / self.lenValues) * 5) + 34) / 1.17, 460])
-            # 6
-            pygame.draw.rect(self.display, black, [(((875 - (self.lenValues * 2)) / self.lenValues) * 5) +  36, round(450 - (quicksort(self.values)[5] * 4.5)), ((875 - (self.lenValues * 2)) / self.lenValues), round(450 - (450 - (quicksort(self.values)[5] * 4.5)))])
-            number6 = self.main_font.render(str(quicksort(self.values)[5]), True, black)
-            self.display.blit(number6, [((((875 - (self.lenValues * 2)) / self.lenValues) * 6) + 36) / 1.12, 460])
-            # 7
-            pygame.draw.rect(self.display, black, [(((875 - (self.lenValues * 2)) / self.lenValues) * 6) +  38, round(450 - (quicksort(self.values)[6] * 4.5)), ((875 - (self.lenValues * 2)) / self.lenValues), round(450 - (450 - (quicksort(self.values)[6] * 4.5)))])
-            number7 = self.main_font.render(str(quicksort(self.values)[6]), True, black)
-            self.display.blit(number7, [((((875 - (self.lenValues * 2)) / self.lenValues) * 7) + 38) / 1.1, 460])
-            # 8
-            pygame.draw.rect(self.display, black, [(((875 - (self.lenValues * 2)) / self.lenValues) * 7) +  40, round(450 - (quicksort(self.values)[7] * 4.5)), ((875 - (self.lenValues * 2)) / self.lenValues), round(450 - (450 - (quicksort(self.values)[7] * 4.5)))])
-            number8 = self.main_font.render(str(quicksort(self.values)[7]), True, black)
-            self.display.blit(number8, [((((875 - (self.lenValues * 2)) / self.lenValues) * 8) + 40) / 1.09, 460])
-            # 9
-            pygame.draw.rect(self.display, black, [(((875 - (self.lenValues * 2)) / self.lenValues) * 8) +  42, round(450 - (quicksort(self.values)[8] * 4.5)), ((875 - (self.lenValues * 2)) / self.lenValues), round(450 - (450 - (quicksort(self.values)[8] * 4.5)))])
-            number9 = self.main_font.render(str(quicksort(self.values)[8]), True, black)
-            self.display.blit(number9, [((((875 - (self.lenValues * 2)) / self.lenValues) * 9) + 42) / 1.07, 460])
-            # 10
-            pygame.draw.rect(self.display, black, [(((875 - (self.lenValues * 2)) / self.lenValues) * 9) +  44, round(450 - (quicksort(self.values)[9] * 4.5)), ((875 - (self.lenValues * 2)) / self.lenValues), round(450 - (450 - (quicksort(self.values)[9] * 4.5)))])
-            number10 = self.main_font.render(str(quicksort(self.values)[9]), True, black)
-            self.display.blit(number10, [((((875 - (self.lenValues * 2)) / self.lenValues) * 10) + 44) / 1.075, 460])
-            # 11
-            pygame.draw.rect(self.display, black, [(((875 - (self.lenValues * 2)) / self.lenValues) * 10) +  46, round(450 - (quicksort(self.values)[10] * 4.5)), ((875 - (self.lenValues * 2)) / self.lenValues), round(450 - (450 - (quicksort(self.values)[10] * 4.5)))])
-            number11 = self.main_font.render(str(quicksort(self.values)[10]), True, black)
-            self.display.blit(number11, [((((875 - (self.lenValues * 2)) / self.lenValues) * 11) + 46) / 1.070, 460])
-            # 12
-            pygame.draw.rect(self.display, black, [(((875 - (self.lenValues * 2)) / self.lenValues) * 11) +  48, round(450 - (quicksort(self.values)[11] * 4.5)), ((875 - (self.lenValues * 2)) / self.lenValues), round(450 - (450 - (quicksort(self.values)[11] * 4.5)))])
-            number12 = self.main_font.render(str(quicksort(self.values)[11]), True, black)
-            self.display.blit(number12, [((((875 - (self.lenValues * 2)) / self.lenValues) * 12) + 28) / 1.045, 460])
-            # 13
-            pygame.draw.rect(self.display, black, [(((875 - (self.lenValues * 2)) / self.lenValues) * 12) +  50, round(450 - (quicksort(self.values)[12] * 4.5)), ((875 - (self.lenValues * 2)) / self.lenValues), round(450 - (450 - (quicksort(self.values)[12] * 4.5)))])
-            number13 = self.main_font.render(str(quicksort(self.values)[12]), True, black)
-            self.display.blit(number13, [((((875 - (self.lenValues * 2)) / self.lenValues) * 13) + 50) / 1.060, 460])
-            # 14
-            pygame.draw.rect(self.display, black, [(((875 - (self.lenValues * 2)) / self.lenValues) * 13) +  52, round(450 - (quicksort(self.values)[13] * 4.5)), ((875 - (self.lenValues * 2)) / self.lenValues), round(450 - (450 - (quicksort(self.values)[13] * 4.5)))])
-            number14 = self.main_font.render(str(quicksort(self.values)[13]), True, black)
-            self.display.blit(number14, [((((875 - (self.lenValues * 2)) / self.lenValues) * 14) + 52) / 1.05, 460])
+            bar1()
+            bar2()
+            bar3()
+            bar4()
+            bar5()
+            bar6()
+            bar7()
+            bar8()
+            bar9()
+            bar10()
+            bar11()
+            bar12()
+            bar13()
+            bar14()
 
-
-            point1_x = 25
-            point1_y = round(450 - (quicksort(self.values)[0] * 4.5))
-            point1_y2 = (round(450 - (quicksort(self.values)[0] * 4.5))) + 2
-
-            point2_x = ((875 - (self.lenValues * 2)) / self.lenValues) + 28
-            point2_y = round(450 - (quicksort(self.values)[1] * 4.5))
-            point2_y2 = (round(450 - (quicksort(self.values)[1] * 4.5))) + 2
-
-            point3_x = (((875 - (self.lenValues * 2)) / self.lenValues) * 2) + 30
-            point3_y = round(450 - (quicksort(self.values)[2] * 4.5))
-            point3_y2 = (round(450 - (quicksort(self.values)[2] * 4.5))) + 2
-
-            point4_x = (((875 - (self.lenValues * 2)) / self.lenValues) * 3) +  32
-            point4_y = round(450 - (quicksort(self.values)[3] * 4.5))
-            point4_y2 = (round(450 - (quicksort(self.values)[3] * 4.5)) + 2)
-
-            point5_x = (((875 - (self.lenValues * 2)) / self.lenValues) * 4) +  34
-            point5_y = round(450 - (quicksort(self.values)[4] * 4.5))
-            point5_y2 = (round(450 - (quicksort(self.values)[4] * 4.5))) + 2
-
-            point6_x = (((875 - (self.lenValues * 2)) / self.lenValues) * 5) +  36
-            point6_y = round(450 - (quicksort(self.values)[5] * 4.5))
-            point6_y2 = (round(450 - (quicksort(self.values)[5] * 4.5))) + 2
-
-            point7_x = (((875 - (self.lenValues * 2)) / self.lenValues) * 6) +  38
-            point7_y = round(450 - (quicksort(self.values)[6] * 4.5))
-            point7_y2 = (round(450 - (quicksort(self.values)[6] * 4.5))) + 2
-
-            point8_x = (((875 - (self.lenValues * 2)) / self.lenValues) * 7) +  40
-            point8_y  = round(450 - (quicksort(self.values)[7] * 4.5))
-            point8_y2 = (round(450 - (quicksort(self.values)[7] * 4.5))) + 2
-
-            point9_x = (((875 - (self.lenValues * 2)) / self.lenValues) * 8) +  42
-            point9_y = round(450 - (quicksort(self.values)[8] * 4.5))
-            point9_y2 = (round(450 - (quicksort(self.values)[8] * 4.5))) + 2
-
-            point10_x = (((875 - (self.lenValues * 2)) / self.lenValues) * 9) + 44
-            point10_y = round(450 - (quicksort(self.values)[9] * 4.5))
-            point10_y2 = (round(450 - (quicksort(self.values)[9] * 4.5))) + 2
-
-            point11_x = (((875 - (self.lenValues * 2)) / self.lenValues) * 10) +  46
-            point11_y = round(450 - (quicksort(self.values)[10] * 4.5))
-            point11_y2 = (round(450 - (quicksort(self.values)[10] * 4.5))) + 2
-
-            point12_x = (((875 - (self.lenValues * 2)) / self.lenValues) * 11) +  48
-            point12_y =  round(450 - (quicksort(self.values)[11] * 4.5))
-            point12_y2 = (round(450 - (quicksort(self.values)[11] * 4.5))) + 2
-
-            point13_x = (((875 - (self.lenValues * 2)) / self.lenValues) * 12) +  50
-            point13_y = round(450 - (quicksort(self.values)[12] * 4.5))
-            point13_y2 = (round(450 - (quicksort(self.values)[12] * 4.5))) + 2
-
-            point14_x = (((875 - (self.lenValues * 2)) / self.lenValues) * 13) +  52
-            point14_y = round(450 - (quicksort(self.values)[13] * 4.5))
-            point14_y2 = (round(450 - (quicksort(self.values)[13] * 4.5))) + 2
 
             pygame.draw.polygon(self.display, green, [
             [point1_x, point1_y], [point1_x, point1_y2], [point2_x, point2_y2], [point3_x, point3_y2],[point4_x, point4_y2], [point5_x, point5_y2], [point6_x, point6_y2], [point7_x, point7_y2], [point8_x, point8_y2], [point9_x, point9_y2], [point10_x, point10_y2], [point11_x, point11_y2], [point12_x, point12_y2], [point13_x, point13_y2], [point14_x, point14_y2],
@@ -1038,132 +511,164 @@ class Sorting:
             ])
 
         elif self.lenValues == 15:
-            # 1
-            pygame.draw.rect(self.display, black, [25, round(450 - (quicksort(self.values)[0] * 4.5)), ((875 - (self.lenValues * 2)) / self.lenValues), round(450 - (450 - (quicksort(self.values)[0] * 4.5)))])
-            number1 = self.main_font.render(str(quicksort(self.values)[0]), True, black)
-            self.display.blit(number1, [(((875 - (self.lenValues * 2)) / self.lenValues) + 25) / 2, 460])
-            # 2
-            pygame.draw.rect(self.display, black, [((875 - (self.lenValues * 2)) / self.lenValues) + 28, round(450 - (quicksort(self.values)[1] * 4.5)), ((875 - (self.lenValues * 2)) / self.lenValues), round(450 - (450 - (quicksort(self.values)[1] * 4.5)))])
-            number2 = self.main_font.render(str(quicksort(self.values)[1]), True, black)
-            self.display.blit(number2, [((((875 - (self.lenValues * 2)) / self.lenValues) * 2) + 28) / 1.5, 460])
-            # 3
-            pygame.draw.rect(self.display, black, [(((875 - (self.lenValues * 2)) / self.lenValues) * 2) + 30, round(450 - (quicksort(self.values)[2] * 4.5)), ((875 - (self.lenValues * 2)) / self.lenValues), round(450 - (450 - (quicksort(self.values)[2] * 4.5)))])
-            number3 = self.main_font.render(str(quicksort(self.values)[2]), True, black)
-            self.display.blit(number3, [((((875 - (self.lenValues * 2)) / self.lenValues) * 3) + 30) / 1.25, 460])
-            # 4
-            pygame.draw.rect(self.display, black, [(((875 - (self.lenValues * 2)) / self.lenValues) * 3) +  32, round(450 - (quicksort(self.values)[3] * 4.5)), ((875 - (self.lenValues * 2)) / self.lenValues), round(450 - (450 - (quicksort(self.values)[3] * 4.5)))])
-            number4 = self.main_font.render(str(quicksort(self.values)[3]), True, black)
-            self.display.blit(number4, [((((875 - (self.lenValues * 2)) / self.lenValues) * 4) + 32) / 1.2, 460])
-            # 5
-            pygame.draw.rect(self.display, black, [(((875 - (self.lenValues * 2)) / self.lenValues) * 4) +  34, round(450 - (quicksort(self.values)[4] * 4.5)), ((875 - (self.lenValues * 2)) / self.lenValues), round(450 - (450 - (quicksort(self.values)[4] * 4.5)))])
-            number5 = self.main_font.render(str(quicksort(self.values)[4]), True, black)
-            self.display.blit(number5, [((((875 - (self.lenValues * 2)) / self.lenValues) * 5) + 34) / 1.17, 460])
-            # 6
-            pygame.draw.rect(self.display, black, [(((875 - (self.lenValues * 2)) / self.lenValues) * 5) +  36, round(450 - (quicksort(self.values)[5] * 4.5)), ((875 - (self.lenValues * 2)) / self.lenValues), round(450 - (450 - (quicksort(self.values)[5] * 4.5)))])
-            number6 = self.main_font.render(str(quicksort(self.values)[5]), True, black)
-            self.display.blit(number6, [((((875 - (self.lenValues * 2)) / self.lenValues) * 6) + 36) / 1.12, 460])
-            # 7
-            pygame.draw.rect(self.display, black, [(((875 - (self.lenValues * 2)) / self.lenValues) * 6) +  38, round(450 - (quicksort(self.values)[6] * 4.5)), ((875 - (self.lenValues * 2)) / self.lenValues), round(450 - (450 - (quicksort(self.values)[6] * 4.5)))])
-            number7 = self.main_font.render(str(quicksort(self.values)[6]), True, black)
-            self.display.blit(number7, [((((875 - (self.lenValues * 2)) / self.lenValues) * 7) + 38) / 1.1, 460])
-            # 8
-            pygame.draw.rect(self.display, black, [(((875 - (self.lenValues * 2)) / self.lenValues) * 7) +  40, round(450 - (quicksort(self.values)[7] * 4.5)), ((875 - (self.lenValues * 2)) / self.lenValues), round(450 - (450 - (quicksort(self.values)[7] * 4.5)))])
-            number8 = self.main_font.render(str(quicksort(self.values)[7]), True, black)
-            self.display.blit(number8, [((((875 - (self.lenValues * 2)) / self.lenValues) * 8) + 40) / 1.09, 460])
-            # 9
-            pygame.draw.rect(self.display, black, [(((875 - (self.lenValues * 2)) / self.lenValues) * 8) +  42, round(450 - (quicksort(self.values)[8] * 4.5)), ((875 - (self.lenValues * 2)) / self.lenValues), round(450 - (450 - (quicksort(self.values)[8] * 4.5)))])
-            number9 = self.main_font.render(str(quicksort(self.values)[8]), True, black)
-            self.display.blit(number9, [((((875 - (self.lenValues * 2)) / self.lenValues) * 9) + 42) / 1.07, 460])
-            # 10
-            pygame.draw.rect(self.display, black, [(((875 - (self.lenValues * 2)) / self.lenValues) * 9) +  44, round(450 - (quicksort(self.values)[9] * 4.5)), ((875 - (self.lenValues * 2)) / self.lenValues), round(450 - (450 - (quicksort(self.values)[9] * 4.5)))])
-            number10 = self.main_font.render(str(quicksort(self.values)[9]), True, black)
-            self.display.blit(number10, [((((875 - (self.lenValues * 2)) / self.lenValues) * 10) + 44) / 1.075, 460])
-            # 11
-            pygame.draw.rect(self.display, black, [(((875 - (self.lenValues * 2)) / self.lenValues) * 10) +  46, round(450 - (quicksort(self.values)[10] * 4.5)), ((875 - (self.lenValues * 2)) / self.lenValues), round(450 - (450 - (quicksort(self.values)[10] * 4.5)))])
-            number11 = self.main_font.render(str(quicksort(self.values)[10]), True, black)
-            self.display.blit(number11, [((((875 - (self.lenValues * 2)) / self.lenValues) * 11) + 46) / 1.070, 460])
-            # 12
-            pygame.draw.rect(self.display, black, [(((875 - (self.lenValues * 2)) / self.lenValues) * 11) +  48, round(450 - (quicksort(self.values)[11] * 4.5)), ((875 - (self.lenValues * 2)) / self.lenValues), round(450 - (450 - (quicksort(self.values)[11] * 4.5)))])
-            number12 = self.main_font.render(str(quicksort(self.values)[11]), True, black)
-            self.display.blit(number12, [((((875 - (self.lenValues * 2)) / self.lenValues) * 12) + 28) / 1.045, 460])
-            # 13
-            pygame.draw.rect(self.display, black, [(((875 - (self.lenValues * 2)) / self.lenValues) * 12) +  50, round(450 - (quicksort(self.values)[12] * 4.5)), ((875 - (self.lenValues * 2)) / self.lenValues), round(450 - (450 - (quicksort(self.values)[12] * 4.5)))])
-            number13 = self.main_font.render(str(quicksort(self.values)[12]), True, black)
-            self.display.blit(number13, [((((875 - (self.lenValues * 2)) / self.lenValues) * 13) + 50) / 1.060, 460])
-            # 14
-            pygame.draw.rect(self.display, black, [(((875 - (self.lenValues * 2)) / self.lenValues) * 13) +  52, round(450 - (quicksort(self.values)[13] * 4.5)), ((875 - (self.lenValues * 2)) / self.lenValues), round(450 - (450 - (quicksort(self.values)[13] * 4.5)))])
-            number14 = self.main_font.render(str(quicksort(self.values)[13]), True, black)
-            self.display.blit(number14, [((((875 - (self.lenValues * 2)) / self.lenValues) * 14) + 52) / 1.05, 460])
-            # 15
-            pygame.draw.rect(self.display, black, [(((875 - (self.lenValues * 2)) / self.lenValues) * 14) +  54, round(450 - (quicksort(self.values)[14] * 4.5)), ((875 - (self.lenValues * 2)) / self.lenValues), round(450 - (450 - (quicksort(self.values)[14] * 4.5)))])
-            number15 = self.main_font.render(str(quicksort(self.values)[14]), True, black)
-            self.display.blit(number15, [((((875 - (self.lenValues * 2)) / self.lenValues) * 15) + 54) / 1.050, 460])
-
-            point1_x = 25
-            point1_y = round(450 - (quicksort(self.values)[0] * 4.5))
-            point1_y2 = (round(450 - (quicksort(self.values)[0] * 4.5))) + 2
-
-            point2_x = ((875 - (self.lenValues * 2)) / self.lenValues) + 28
-            point2_y = round(450 - (quicksort(self.values)[1] * 4.5))
-            point2_y2 = (round(450 - (quicksort(self.values)[1] * 4.5))) + 2
-
-            point3_x = (((875 - (self.lenValues * 2)) / self.lenValues) * 2) + 30
-            point3_y = round(450 - (quicksort(self.values)[2] * 4.5))
-            point3_y2 = (round(450 - (quicksort(self.values)[2] * 4.5))) + 2
-
-            point4_x = (((875 - (self.lenValues * 2)) / self.lenValues) * 3) +  32
-            point4_y = round(450 - (quicksort(self.values)[3] * 4.5))
-            point4_y2 = (round(450 - (quicksort(self.values)[3] * 4.5)) + 2)
-
-            point5_x = (((875 - (self.lenValues * 2)) / self.lenValues) * 4) +  34
-            point5_y = round(450 - (quicksort(self.values)[4] * 4.5))
-            point5_y2 = (round(450 - (quicksort(self.values)[4] * 4.5))) + 2
-
-            point6_x = (((875 - (self.lenValues * 2)) / self.lenValues) * 5) +  36
-            point6_y = round(450 - (quicksort(self.values)[5] * 4.5))
-            point6_y2 = (round(450 - (quicksort(self.values)[5] * 4.5))) + 2
-
-            point7_x = (((875 - (self.lenValues * 2)) / self.lenValues) * 6) +  38
-            point7_y = round(450 - (quicksort(self.values)[6] * 4.5))
-            point7_y2 = (round(450 - (quicksort(self.values)[6] * 4.5))) + 2
-
-            point8_x = (((875 - (self.lenValues * 2)) / self.lenValues) * 7) +  40
-            point8_y  = round(450 - (quicksort(self.values)[7] * 4.5))
-            point8_y2 = (round(450 - (quicksort(self.values)[7] * 4.5))) + 2
-
-            point9_x = (((875 - (self.lenValues * 2)) / self.lenValues) * 8) +  42
-            point9_y = round(450 - (quicksort(self.values)[8] * 4.5))
-            point9_y2 = (round(450 - (quicksort(self.values)[8] * 4.5))) + 2
-
-            point10_x = (((875 - (self.lenValues * 2)) / self.lenValues) * 9) + 44
-            point10_y = round(450 - (quicksort(self.values)[9] * 4.5))
-            point10_y2 = (round(450 - (quicksort(self.values)[9] * 4.5))) + 2
-
-            point11_x = (((875 - (self.lenValues * 2)) / self.lenValues) * 10) +  46
-            point11_y = round(450 - (quicksort(self.values)[10] * 4.5))
-            point11_y2 = (round(450 - (quicksort(self.values)[10] * 4.5))) + 2
-
-            point12_x = (((875 - (self.lenValues * 2)) / self.lenValues) * 11) +  48
-            point12_y =  round(450 - (quicksort(self.values)[11] * 4.5))
-            point12_y2 = (round(450 - (quicksort(self.values)[11] * 4.5))) + 2
-
-            point13_x = (((875 - (self.lenValues * 2)) / self.lenValues) * 12) +  50
-            point13_y = round(450 - (quicksort(self.values)[12] * 4.5))
-            point13_y2 = (round(450 - (quicksort(self.values)[12] * 4.5))) + 2
-
-            point14_x = (((875 - (self.lenValues * 2)) / self.lenValues) * 13) +  52
-            point14_y = round(450 - (quicksort(self.values)[13] * 4.5))
-            point14_y2 = (round(450 - (quicksort(self.values)[13] * 4.5))) + 2
-
-            point15_x = (((875 - (self.lenValues * 2)) / self.lenValues) * 14) +  54
-            point15_y = round(450 - (quicksort(self.values)[14] * 4.5))
-            point15_y2 = (round(450 - (quicksort(self.values)[14] * 4.5))) + 2
+            bar1()
+            bar2()
+            bar3()
+            bar4()
+            bar5()
+            bar6()
+            bar7()
+            bar8()
+            bar9()
+            bar10()
+            bar11()
+            bar12()
+            bar13()
+            bar14()
+            bar15()
 
 
             pygame.draw.polygon(self.display, green, [
             [point1_x, point1_y], [point1_x, point1_y2], [point2_x, point2_y2], [point3_x, point3_y2],[point4_x, point4_y2], [point5_x, point5_y2], [point6_x, point6_y2], [point7_x, point7_y2], [point8_x, point8_y2], [point9_x, point9_y2], [point10_x, point10_y2], [point11_x, point11_y2], [point12_x, point12_y2], [point13_x, point13_y2], [point14_x, point14_y2], [point15_x, point15_y2],
             [point15_x, point15_y], [point14_x, point14_y], [point13_x, point13_y] ,[point12_x, point12_y], [point11_x, point11_y] ,[point10_x, point10_y] ,[point9_x, point9_y] ,[point8_x, point8_y] ,[point7_x, point7_y] ,[point6_x, point6_y], [point5_x, point5_y] , [point4_x, point4_y], [point3_x, point3_y], [point2_x, point2_y]
             ])
+
+        elif self.lenValues == 16:
+            bar1()
+            bar2()
+            bar3()
+            bar4()
+            bar5()
+            bar6()
+            bar7()
+            bar8()
+            bar9()
+            bar10()
+            bar11()
+            bar12()
+            bar13()
+            bar14()
+            bar15()
+            bar16()
+
+
+            pygame.draw.polygon(self.display, green, [
+            [point1_x, point1_y], [point1_x, point1_y2], [point2_x, point2_y2], [point3_x, point3_y2],[point4_x, point4_y2], [point5_x, point5_y2], [point6_x, point6_y2], [point7_x, point7_y2], [point8_x, point8_y2], [point9_x, point9_y2], [point10_x,
+            point10_y2], [point11_x, point11_y2], [point12_x, point12_y2], [point13_x, point13_y2], [point14_x, point14_y2], [point15_x, point15_y2], [point16_x, point16_y2],  [point16_x, point16_y], [point15_x, point15_y], [point14_x, point14_y], [point13_x,
+            point13_y] ,[point12_x, point12_y], [point11_x, point11_y] ,[point10_x, point10_y] ,[point9_x, point9_y] ,[point8_x, point8_y] ,[point7_x, point7_y] ,[point6_x, point6_y], [point5_x, point5_y] , [point4_x, point4_y], [point3_x, point3_y], [point2_x,
+            point2_y]
+            ])
+
+        elif self.lenValues == 17:
+            bar1()
+            bar2()
+            bar3()
+            bar4()
+            bar5()
+            bar6()
+            bar7()
+            bar8()
+            bar9()
+            bar10()
+            bar11()
+            bar12()
+            bar13()
+            bar14()
+            bar15()
+            bar16()
+            bar17()
+
+            pygame.draw.polygon(self.display, green, [
+            [point1_x, point1_y], [point1_x, point1_y2], [point2_x, point2_y2], [point3_x, point3_y2],[point4_x, point4_y2], [point5_x, point5_y2], [point6_x, point6_y2], [point7_x, point7_y2], [point8_x, point8_y2], [point9_x, point9_y2], [point10_x,
+            point10_y2], [point11_x, point11_y2], [point12_x, point12_y2], [point13_x, point13_y2], [point14_x, point14_y2], [point15_x, point15_y2], [point16_x, point16_y2], [point17_x, point17_y2],   [point17_x, point17_y], [point16_x, point16_y], [point15_x, point15_y], [point14_x, point14_y], [point13_x,
+            point13_y] ,[point12_x, point12_y], [point11_x, point11_y] ,[point10_x, point10_y] ,[point9_x, point9_y] ,[point8_x, point8_y] ,[point7_x, point7_y] ,[point6_x, point6_y], [point5_x, point5_y] , [point4_x, point4_y], [point3_x, point3_y], [point2_x,
+            point2_y]
+            ])
+
+        elif self.lenValues == 18:
+            bar1()
+            bar2()
+            bar3()
+            bar4()
+            bar5()
+            bar6()
+            bar7()
+            bar8()
+            bar9()
+            bar10()
+            bar11()
+            bar12()
+            bar13()
+            bar14()
+            bar15()
+            bar16()
+            bar17()
+            bar18()
+
+            pygame.draw.polygon(self.display, green, [
+            [point1_x, point1_y], [point1_x, point1_y2], [point2_x, point2_y2], [point3_x, point3_y2],[point4_x, point4_y2], [point5_x, point5_y2], [point6_x, point6_y2], [point7_x, point7_y2], [point8_x, point8_y2], [point9_x, point9_y2], [point10_x,
+            point10_y2], [point11_x, point11_y2], [point12_x, point12_y2], [point13_x, point13_y2], [point14_x, point14_y2], [point15_x, point15_y2], [point16_x, point16_y2], [point17_x, point17_y2], [point18_x, point18_y2],     [point18_x, point18_y], [point17_x, point17_y], [point16_x, point16_y], [point15_x, point15_y], [point14_x, point14_y], [point13_x,
+            point13_y] ,[point12_x, point12_y], [point11_x, point11_y] ,[point10_x, point10_y] ,[point9_x, point9_y] ,[point8_x, point8_y] ,[point7_x, point7_y] ,[point6_x, point6_y], [point5_x, point5_y] , [point4_x, point4_y], [point3_x, point3_y], [point2_x,
+            point2_y]
+            ])
+
+        elif self.lenValues == 19:
+            bar1()
+            bar2()
+            bar3()
+            bar4()
+            bar5()
+            bar6()
+            bar7()
+            bar8()
+            bar9()
+            bar10()
+            bar11()
+            bar12()
+            bar13()
+            bar14()
+            bar15()
+            bar16()
+            bar17()
+            bar18()
+            bar19()
+
+            pygame.draw.polygon(self.display, green, [
+            [point1_x, point1_y], [point1_x, point1_y2], [point2_x, point2_y2], [point3_x, point3_y2],[point4_x, point4_y2], [point5_x, point5_y2], [point6_x, point6_y2], [point7_x, point7_y2], [point8_x, point8_y2], [point9_x, point9_y2], [point10_x,
+            point10_y2], [point11_x, point11_y2], [point12_x, point12_y2], [point13_x, point13_y2], [point14_x, point14_y2], [point15_x, point15_y2], [point16_x, point16_y2], [point17_x, point17_y2], [point18_x, point18_y2], [point19_x, point19_y2],    [point19_x, point19_y],
+            [point18_x, point18_y], [point17_x, point17_y], [point16_x, point16_y], [point15_x, point15_y], [point14_x, point14_y], [point13_x, point13_y] ,[point12_x, point12_y], [point11_x, point11_y] ,[point10_x, point10_y] ,[point9_x, point9_y] ,[point8_x, point8_y] ,[point7_x,
+            point7_y] ,[point6_x, point6_y], [point5_x, point5_y] , [point4_x, point4_y], [point3_x, point3_y], [point2_x, point2_y]
+            ])
+
+        elif self.lenValues == 20:
+            bar1()
+            bar2()
+            bar3()
+            bar4()
+            bar5()
+            bar6()
+            bar7()
+            bar8()
+            bar9()
+            bar10()
+            bar11()
+            bar12()
+            bar13()
+            bar14()
+            bar15()
+            bar16()
+            bar17()
+            bar18()
+            bar19()
+            bar20()
+
+            pygame.draw.polygon(self.display, green, [
+            [point1_x, point1_y], [point1_x, point1_y2], [point2_x, point2_y2], [point3_x, point3_y2],[point4_x, point4_y2], [point5_x, point5_y2], [point6_x, point6_y2], [point7_x, point7_y2], [point8_x, point8_y2], [point9_x, point9_y2], [point10_x,
+            point10_y2], [point11_x, point11_y2], [point12_x, point12_y2], [point13_x, point13_y2], [point14_x, point14_y2], [point15_x, point15_y2], [point16_x, point16_y2], [point17_x, point17_y2], [point18_x, point18_y2], [point19_x, point19_y2], [point20_x, point20_y2],
+            [point20_x, point20_y],   [point19_x, point19_y], [point18_x, point18_y], [point17_x, point17_y], [point16_x, point16_y], [point15_x, point15_y], [point14_x, point14_y], [point13_x, point13_y] ,[point12_x, point12_y], [point11_x, point11_y] ,[point10_x, point10_y],
+            [point9_x, point9_y] ,[point8_x, point8_y] ,[point7_x, point7_y] ,[point6_x, point6_y], [point5_x, point5_y] , [point4_x, point4_y], [point3_x, point3_y], [point2_x, point2_y]
+            ])
+
 
         number1_pos = (((875 - (self.lenValues * 2)) / self.lenValues) + 25) / 2
         number2_pos = ((((875 - (self.lenValues * 2)) / self.lenValues) * 2) + 28) / 1.5
@@ -1180,6 +685,11 @@ class Sorting:
         number13_pos = ((((875 - (self.lenValues * 2)) / self.lenValues) * 13) + 50) / 1.060
         number14_pos = ((((875 - (self.lenValues * 2)) / self.lenValues) * 14) + 52) / 1.05
         number15_pos = ((((875 - (self.lenValues * 2)) / self.lenValues) * 15) + 54) / 1.05
+        number16_pos = ((((875 - (self.lenValues * 2)) / self.lenValues) * 16) + 56) / 1.049
+        number17_pos = ((((875 - (self.lenValues * 2)) / self.lenValues) * 17) + 58) / 1.048
+        number18_pos = ((((875 - (self.lenValues * 2)) / self.lenValues) * 18) + 60) / 1.047
+        number19_pos = ((((875 - (self.lenValues * 2)) / self.lenValues) * 19) + 62) / 1.046
+        number20_pos = ((((875 - (self.lenValues * 2)) / self.lenValues) * 20) + 64) / 1.045
 
         if my_item_idex0 == True:
             pygame.draw.rect(self.display, red, [number1_pos + 2, 490, 10, 10])
@@ -1226,12 +736,27 @@ class Sorting:
         elif my_item_idex14 == True:
             pygame.draw.rect(self.display, red, [number15_pos + 2, 490, 10, 10])
 
+        elif my_item_idex15 == True:
+            pygame.draw.rect(self.display, red, [number16_pos + 2, 490, 10, 10])
 
+        elif my_item_idex16 == True:
+            pygame.draw.rect(self.display, red, [number17_pos + 2, 490, 10, 10])
+
+        elif my_item_idex17 == True:
+            pygame.draw.rect(self.display, red, [number18_pos + 2, 490, 10, 10])
+
+        elif my_item_idex18 == True:
+            pygame.draw.rect(self.display, red, [number19_pos + 2, 490, 10, 10])
+
+        elif my_item_idex19 == True:
+            pygame.draw.rect(self.display, red, [number20_pos + 2, 490, 10, 10])
 
 
 
         pygame.display.update()
         time.sleep(0.1)
+
+
 
         def binarysearch(list, item):
             low = 0
@@ -1283,7 +808,11 @@ class Sorting:
                 my_item_idex12 = False
                 my_item_idex13 = False
                 my_item_idex14 = False
-
+                my_item_idex15 = False
+                my_item_idex16 = False
+                my_item_idex17 = False
+                my_item_idex18 = False
+                my_item_idex19 = False
 
 
         if my_item_idex == 0:
@@ -1331,26 +860,24 @@ class Sorting:
         elif my_item_idex == 14:
             my_item_idex14 = True
 
+        elif my_item_idex == 15:
+            my_item_idex15 = True
+
+        elif my_item_idex == 16:
+            my_item_idex16 = True
+
+        elif my_item_idex == 17:
+            my_item_idex17 = True
+
+        elif my_item_idex == 18:
+            my_item_idex18 = True
+
+        elif my_item_idex == 19:
+            my_item_idex19 = True
+
+
         pygame.display.update()
         time.sleep(0.1)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
